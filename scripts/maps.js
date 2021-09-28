@@ -6,6 +6,7 @@ var laboratory = extend(SectorPreset, "Laboratory", Planets.serpulo, 154, {
 });
 
 var voidmountain = extend(SectorPreset, "Void-mountain", Planets.serpulo, 0, {
+    captureWave: 25,
     localizedName: "Void mountain",
     description: "The placed arond strange hole in space, Destroy the enemy base and get the new turret",
     difficulty: 7,
