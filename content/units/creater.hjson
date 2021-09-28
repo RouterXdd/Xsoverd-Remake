@@ -1,0 +1,55 @@
+name:Creater
+type: payload
+flying: true
+health: 225
+speed: 2.55
+rotateSpeed: 18
+hitSize: 6
+range: 85
+circleTarget: true
+lightRadius: 40
+lightColor: e65555
+weapons: [
+ {
+    name: creater-weapon
+    x: 0
+    y: -4
+    mirror: false
+    shootSound: none
+    reload: 14
+    bullet: {
+      type: BasicBulletType
+      damage: 10
+      speed: 4
+      lifetime: 20
+      pierceDamageFactor: 0.1
+      length: 2
+      recoil: 2
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+]
+abilities: [
+  {
+    type: UnitSpawnAbility
+    unit: copyer
+    spawnX: 5
+    spawnY: 0
+    spawnTime: 375
+  }
+  {
+    type: UnitSpawnAbility
+    unit: copyer
+    spawnX: -5
+    spawnY: 0
+    spawnTime: 375
+  }
+]
+research:{
+parent: copyer
+requirements: [
+coal/1250
+silicon/1550
+]
+}

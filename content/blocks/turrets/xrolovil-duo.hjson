@@ -1,0 +1,39 @@
+type: ItemTurret
+name: "Хролофиловая турель"
+description: "Модифицированная хролофилом двойная турель"
+targetAir: true
+targetGround: true
+health: 450
+size: 1
+reloadTime: 24
+inaccuracy: 2
+range: 110
+shots: 1
+ammoTypes: {
+ xrolovil: {
+ speed: 2
+ lifetime: 60
+ damage: 22
+ ammoMultiplier: 4
+ reloadMultiplier: 1
+ bulletWidth: 8
+ bulletHeight: 12
+ }
+ silicon: {
+ speed: 2
+ lifetime: 60
+ damage: 14
+ ammoMultiplier: 5
+ homingPower: 1
+ homingRange: 20
+ reloadMultiplier: 1.4
+ bulletWidth: 8
+ bulletHeight: 12
+ }
+ }
+category: turret
+research: duo
+requirements: [
+ copper/65
+ xrolovil/35
+]

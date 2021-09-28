@@ -1,0 +1,5 @@
+type:OreBlock
+name:"Хролофил"
+itemDrop:xrolovil
+oreDefault:true
+variants:3

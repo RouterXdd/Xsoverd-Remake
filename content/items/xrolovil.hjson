@@ -1,0 +1,7 @@
+name: "Хролофил"
+description: "Кристалл из самых низов Серпуло. Имеет низкий уровень радиации"
+color: "#007500"
+radioactivity: 0.2
+explosiveness:0.0
+flammability:0.0
+hardness: 2

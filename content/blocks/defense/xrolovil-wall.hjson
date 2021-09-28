@@ -1,0 +1,10 @@
+name:"Хролофиловая стена"
+description:"Более лучшая версия медной стены"
+type:Wall
+health:450
+size:1
+requirements:[
+xrolovil/6
+]
+category:defense
+research:copper-wall

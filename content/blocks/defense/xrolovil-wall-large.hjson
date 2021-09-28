@@ -1,0 +1,10 @@
+name:"Большая хролофиловая стена"
+description:"Чем больше тем лучше"
+type:Wall
+health:1800
+size:2
+requirements:[
+xrolovil/24
+]
+category:defense
+research:xrolovil-wall

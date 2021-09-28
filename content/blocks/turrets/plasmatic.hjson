@@ -1,0 +1,81 @@
+name: Plasmatic
+type: PowerTurret
+size: 2
+range: 135
+health: 750
+reloadTime: 10
+powerUse: 1.6
+rotateSpeed: 3.4
+targetHealing: true
+shootSound: laser
+shootShake: 1.5
+shootType: {
+  type: EmpBulletType
+  scaleVelocity: true
+  damage: 15
+  splashDamage: 15
+  splashDamageRadius: 15
+  healPercent: 10
+  radius: 15
+  unitDamageScl: 0.8
+  timeIncrease: 1.25
+  timeDuration: 240
+  speed: 5
+  lifetime: 40
+  sprite: circle-bullet
+  width: 6
+  height: 6
+  shrinkY: 0
+  frontColor: ffffff
+  backColor: 83f793
+  lightColor: 83f793
+  hitColor: 83f793
+  hitEffect: {
+    type: MultiEffect
+    lifetime: 40
+    effects: [
+      {
+        type: ParticleEffect
+        lifetime: 5
+        particles: 1
+        length: 0
+        sizeFrom: 15
+        sizeTo: 15
+        colorFrom: 83f793
+        colorTo: 83f793
+      }
+      {
+        type: WaveEffect
+        lifetime: 40
+        sizeFrom: 15
+        sizeTo: 15
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: 83f793
+        colorTo: 83f793
+      }
+      {
+        type: ParticleEffect
+        lifetime: 40
+        length: 0
+        particles: 1
+        sizeFrom: 4
+        sizeTo: 0
+        colorTo: 83f793
+      }
+    ]
+  }
+  trailWidth: 3
+  trailLength: 15
+  trailColor: 83f793
+  despawnEffect: none
+  despawnHit: true
+}
+category: turret
+research: xrolovil-duo
+requirements: [
+  copper/90
+  graphite/80
+  silicon/60
+  double-xrolovil/35
+]

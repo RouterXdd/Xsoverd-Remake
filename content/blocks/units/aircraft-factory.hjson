@@ -1,0 +1,46 @@
+name: "Air craft factory"
+description: "Make the three types of air crafts"
+type: UnitFactory
+health: 450
+size: 3
+unitCapModifier: 1
+consumes: {
+power: 2.8
+}
+plans: [
+  {
+    unit: dasher
+    requirements: [
+      silicon/12
+      copper/6
+    ]
+    time: 125
+  }
+{
+    unit: copyer
+    requirements: [
+      silicon/8
+      copper/14
+    ]
+    time: 275
+  }
+{
+    unit: spiker
+    requirements: [
+      silicon/6
+      lead/12
+      graphite/5
+    ]
+    time: 375
+  }
+]
+category: units
+requirements: [
+  silicon/115
+  lead/45
+  copper/65
+]
+research: core-shard
+
+
+//Blocks.groundFactory.plans.add(new UnitFactory.UnitPlan("pixelcraft-rustyalpha", 60 * 25, 

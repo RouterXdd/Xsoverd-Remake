@@ -1,0 +1,40 @@
+name: "Прототип <Катастрофа>"
+description: "Является прототипом турели Испепелитель"
+type: LaserTurret
+health: 1750
+size: 3
+shootSnake: 2
+recoilAmount: 3
+range: 190
+reloadTime: 65
+powerUse: 95.0
+shootCone: 5
+firingMoveFract: 0.5
+shootDuration: 220
+buildCostMultiplier: 1.0
+powerUse: 20
+shootType: {
+type: ContinuousLaserBulletType
+damage: 60
+length: 150
+hitEffect: hitMeltdown
+hitSize: 16
+incendChance: 0.4
+incendSpread: 5
+incendAmount: 1
+lifetime: 35
+drawSize: 220
+}
+shootEffect: shootBigSmoke2
+shootSound: laserbig
+loopSound: beam
+loopSoundVolume: 2
+requirements: [
+silicon/675
+thorium/285
+titanium/375
+lead/495
+copper/725
+]
+category: turret
+research: lancer

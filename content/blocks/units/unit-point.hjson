@@ -1,0 +1,14 @@
+name: "Unit Point"
+description: "get more unit limits"
+type: Wall
+health: 425
+size: 2
+unitCapModifier: 6
+category: units
+requirements: [
+  silicon/115
+  lead/65
+  copper/85
+  titanium/145
+]
+research: core-shard 

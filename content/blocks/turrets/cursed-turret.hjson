@@ -1,0 +1,30 @@
+type: PowerTurret
+name: "Cursed Turret"
+description: "This turret is cursed of guardian"
+targetAir: false
+targetGround: true
+health: 500
+size: 2
+reloadTime: 2
+inaccuracy: 30
+range: 150
+shootType:{
+type: LightningBulletType
+lightningColor: "#dd0000"
+lightningRand: 12
+speed: 4
+lifetime: 60
+statusDuration: 255
+status: melting
+damage: 0
+ammoMultiplier: 10
+reloadMultiplier: 1
+bulletWidth: 9
+bulletHeight: 12
+}
+category: turret
+buildVisibility: sandboxOnly
+requirements: [
+silicon/95
+copper/225
+]
