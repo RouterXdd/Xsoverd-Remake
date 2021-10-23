@@ -1,0 +1,45 @@
+{	
+    "localizedName": "Combinator",
+    "description": "[00b765FF]Combinate xrolovil and titanium to make xrotine",
+    "type": "GenericCrafter",
+	"drawer": {
+	"type": "DrawSmelter",
+	"flameColor": "00b765FF"
+	},
+	"size": 2,
+	"hasPower": true,
+	"hasItems": true,
+	"itemCapacity": 10,
+	"craftEffect": {
+    "type": "ParticleEffect",
+    "particles": 10,
+    "length": 20,
+    "baseLength": -20,
+    "offset": 3,
+    "cone": 360,
+    "lifetime": 28,
+    "sizeFrom": 4,
+    "sizeTo": 0,
+    "colorTo": "FFFFFFFF",
+    "colorFrom": "00b765FF"
+    },
+	"craftTime": 65,
+	"updateEffect": "none",
+	"consumes": {
+		"power": 3.6,
+		"items": {
+			"items": [
+               "xrolovil/1",
+			   "titanium/1"
+			]
+		}
+	},
+	"requirements": [
+        "copper/105",
+        "lead/145",
+        "xrolovil/65"
+	],
+	"category": "crafting",
+	"research": "xroviler",
+	"outputItem": "xrotine/1"
+}

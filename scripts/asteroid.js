@@ -1,6 +1,6 @@
 Events.on(ClientLoadEvent, () => {
     const routros = new Planet("asteroid", Planets.sun, 1, 1);
-    asteroid.generator = new none();
+    asteroid.generator = new SerpuloPlanetGenerator();
     asteroid.mesh = new HexMesh(asteroid, 1);
     asteroid.orbitRadius = 8;
     asteroid.orbitTime = 1.8 * 60;
@@ -21,5 +21,7 @@ Events.on(ClientLoadEvent, () => {
     difficulty: 8,
     alwaysUnlocked: true
 };
-});
-});
+};
+);
+};
+);

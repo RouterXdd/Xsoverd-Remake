@@ -7,6 +7,7 @@ health: 550
 size: 2
 reloadTime: 6
 inaccuracy: 30
+powerUse: 3.2
 range: 125
 shootType:{
 type: LightningBulletType
