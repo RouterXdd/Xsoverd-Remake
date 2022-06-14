@@ -1,18 +1,52 @@
-var laboratory = extend(SectorPreset, "Laboratory", Planets.serpulo, 154, {
-    captureWave: 20,
-    localizedName: "Laboratory",
-    difficulty: 6,
-    alwaysUnlocked: true
-});
 
-var voidmountain = extend(SectorPreset, "Void-mountain", Planets.serpulo, 0, {
-    captureWave: 25,
-    localizedName: "Void mountain",
-    description: "The placed arond strange hole in space, Destroy the enemy base and get the new turret",
+const forgottenbase = extend(SectorPreset, "forgotten-base", Planets.serpulo, 78, {
+    captureWave: 40,
+    localizedName: "Forgotten Base",
+    description: "Here was old base, but now this base is destroyed and there plased mini crux launch base.[red] NO, you dont need destroy base you need survive from corrupted. They go from cave",
     difficulty: 7,
     alwaysUnlocked: true
 });
 
-const cblock = name => Vars.content.getByName(ContentType.block, "xsoverdr-" + name);
+const corruptedcave = extend(SectorPreset, "corrupted-cave", Planets.serpulo, 250, {
+    captureWave: 40,
+    localizedName: "Corrupted Cave",
+    description: "The place where was find the xrolovil, but there units was corrupted by xrolovil and start attack all others units. Capture this mine from corrupted",
+    difficulty: 9,
+    alwaysUnlocked: true
+});
 
-node(serpulo.voidmountain, null, Seq.with(new Objectives.SectorComplete(serpulo.voidmountain), new Objectives.Research(cblock("plasmatic"))));
+const obliteratorsprison = extend(SectorPreset, "obliterator's-prison", Planets.serpulo, 146, {
+    captureWave: 51,
+    localizedName: "Obliterator's prison",
+    description: "the magnetic field on this sector, set your team crux.Now this sector have been place to arrive from underground the [red]Obliterator",
+    difficulty: 10,
+    alwaysUnlocked: true
+});
+
+function newNode(parent, content, req, objectives){
+	
+    var parnode = TechTree.get(parent);
+    var node = new TechTree.TechNode(parnode, content, req != null ? content.researchRequirements() : req);
+    var used = new ObjectSet();
+  
+    node.objectives.addAll(objectives = null ? null : objectives);
+}
+
+newNode(SectorPresets.nuclearComplex, laboratory, ItemStack.with(Items.silicon, 100), Seq.with(new Objectives.SectorComplete(SectorPresets.nuclearComplex)));
+
+newNode(SectorPresets.laboratory, voidmountain, ItemStack.with(Items.xrolovil, 100), Seq.with(new Objectives.SectorComplete(SectorPresets.laboratory)));
+
+newNode(SectorPresets.ruinousShores, forgottenbase, ItemStack.with(Items.titanium, 100), Seq.with(new Objectives.SectorComplete(SectorPresets.ruinousShores)));
+
+newNode(SectorPresets.forgottenbase, corruptedcave, ItemStack.with(Items.thorium, 100), Seq.with(new Objectives.SectorComplete(SectorPresets.forgottenbase)));
+
+newNode(SectorPresets.forgottenbase, obliteratorsprison, ItemStack.with(Items.xrotine, 100), Seq.with(new Objectives.SectorComplete(SectorPresets.forgottenbase)));
+
+
+module.exports = {
+    laboratory: laboratory,
+    voidmountain: voidmountain,
+    forgottenbase: forgottenbase,
+    corruptedcave: corruptedcave,
+    obliteratorsprison: obliteratorsprison
+}

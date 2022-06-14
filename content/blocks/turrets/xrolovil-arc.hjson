@@ -5,9 +5,11 @@ targetAir: true
 targetGround: true
 health: 550
 size: 2
-reloadTime: 6
+reload: 6
 inaccuracy: 30
-powerUse: 3.2
+consumes:{
+power: 3.2
+}
 range: 125
 shootType:{
 type: LightningBulletType
@@ -21,6 +23,7 @@ reloadMultiplier: 1
 bulletWidth: 9
 bulletHeight: 12
 }
+shootSound: spark
 category: turret
 research: arc
 requirements: [

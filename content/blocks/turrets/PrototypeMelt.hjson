@@ -1,22 +1,27 @@
-name: "Прототип <Катастрофа>"
-description: "Является прототипом турели Испепелитель"
+name: "Prototype <Meltdown>"
+description: "It is a prototype of meltdown"
+details: "This details of old russian name of meltdown: После создания этой турели. Она назвывалась Катастрофа, но его изобретатель (Анюк) решил переименовать в Испепелитель. Хотя прототип всё ещё имеет старое название"
 type: LaserTurret
 health: 1750
 size: 3
 shootSnake: 2
 recoilAmount: 3
 range: 190
-reloadTime: 65
-powerUse: 95.0
+reload: 155
 shootCone: 5
 firingMoveFract: 0.5
 shootDuration: 220
-buildCostMultiplier: 1.0
-powerUse: 20
+consumes:{
+power: 32.5
+liquid:{
+    liquid: water
+    amount: 0.6
+    }
+}
 shootType: {
 type: ContinuousLaserBulletType
 damage: 60
-length: 150
+length: 190
 hitEffect: hitMeltdown
 hitSize: 16
 incendChance: 0.4

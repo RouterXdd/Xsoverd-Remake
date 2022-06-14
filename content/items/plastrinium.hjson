@@ -1,0 +1,13 @@
+name: "Plastrinium"
+description: "The upgraded plastanium with titanium and silicon"
+color: "#cbd95f"
+radioactivity: 0.0
+explosiveness:0.0
+flammability:0.3
+hardness: 2
+research: {
+parent: plastanium
+requirements: [
+plastrinium/1
+]
+}

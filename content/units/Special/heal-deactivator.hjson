@@ -1,0 +1,49 @@
+name: Heal Deactivator
+description: Special Unit to deactivate the enemy's heal projectors
+type: mech
+hitSize: 12
+speed: 1.25
+flying: false
+health: 190
+range: 60
+weapons: [
+    {
+        name: healdeact-weapon
+        x: 0
+        y: 4
+        reload: 35
+        recoil: 0
+        alternate: true
+        top: true
+        mirror: true
+        shoot:{
+            shots: 2
+        }
+        bullet: {
+            type: BasicBulletType
+            damage: 20
+            height: 10.4
+            width: 8
+            speed: 6
+            lifetime: 10
+        }
+    }
+]
+abilities: [
+    {
+    type: SuppressionFieldAbility
+    orbRadius: 5
+    particleSize: 1
+    particle: {
+        type: ParticleEffect
+        line: true
+        particles: 2
+        lifetime: 30
+        offset: 20
+        length: 20
+        cone: -360
+        lenFron: 4
+        lenTo: 0
+        }
+    }
+]

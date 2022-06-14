@@ -5,7 +5,7 @@ targetAir: false
 targetGround: true
 health: 500
 size: 2
-reloadTime: 2
+reload: 2
 inaccuracy: 30
 range: 150
 shootType:{
@@ -15,12 +15,12 @@ lightningRand: 12
 speed: 4
 lifetime: 60
 statusDuration: 255
-status: melting
+status: boss
 damage: 0
 ammoMultiplier: 10
 reloadMultiplier: 1
-bulletWidth: 9
-bulletHeight: 12
+width: 0
+height: 0
 }
 category: turret
 buildVisibility: sandboxOnly

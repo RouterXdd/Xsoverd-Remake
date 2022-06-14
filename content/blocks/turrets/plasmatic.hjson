@@ -3,8 +3,10 @@ type: PowerTurret
 size: 2
 range: 135
 health: 750
-reloadTime: 10
-powerUse: 1.6
+reload: 10
+consumes:{
+power: 1.6
+}
 rotateSpeed: 3.4
 targetHealing: true
 shootSound: laser
@@ -21,7 +23,7 @@ shootType: {
   timeIncrease: 1.25
   timeDuration: 240
   speed: 5
-  lifetime: 40
+  lifetime: 27
   sprite: circle-bullet
   width: 6
   height: 6
@@ -72,7 +74,10 @@ shootType: {
   despawnHit: true
 }
 category: turret
-research: xrolovil-duo
+research: {
+parent: xrolovil-duo
+objectives: [plasma-base]
+}
 requirements: [
   copper/90
   graphite/80

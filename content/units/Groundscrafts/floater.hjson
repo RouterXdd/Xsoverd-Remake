@@ -1,0 +1,61 @@
+name: Floater
+description: Floats on any liquid
+type: hover
+hovering: true
+shadowElevation: 0.12
+drag: 0.06
+speed: 2.15
+rotateSpeed: 5.1
+accel: 0.1
+range: 180
+health: 136
+armor: 3
+hitSize: 11
+engineOffset: 7
+engineSize: 2
+itemCapacity: 0
+useEngineElevation: false
+weapons: [
+    {
+        name: float-weapon
+        y: -3
+        x: 3
+        top: true
+        mirror: true
+        reload: 40
+        baseRotation: 0
+        shootCone: 360
+        shoot: {
+type: ShootSpread
+shots: 3
+firstShotDelay: 0
+spread: 11
+}
+        bullet:{
+        type: BasicBulletType
+        damage: 10
+        speed: 3
+        homingPower: 0.19
+        homingDelay: 4
+        width: 7
+        height: 12
+        lifetime: 60
+        }
+    }
+]
+abilities: [
+    {
+    type: MoveEffectAbility
+    y: -7
+    x: 0
+    teamColor: true
+}
+]
+research:{
+parent: groundcraft-factory
+requirements: [
+lead/450
+graphite/235
+silicon/350
+]
+}

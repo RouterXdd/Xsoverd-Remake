@@ -1,0 +1,40 @@
+{	
+    "localizedName": "Plastrinium klin",
+    "description": "[green]Make the[blue] plastrinium",
+    "type": "GenericCrafter",
+	"size": 2,
+	"hasPower": true,
+	"hasItems": true,
+	"itemCapacity": 10,
+	"craftEffect": {
+    "type": "WaveEffect",
+    "strokeFrom": 1,
+    "strokeTo": 1,
+    "lifetime": 30,
+    "sizeFrom": 12,
+    "sizeTo": 0,
+    "colorTo": "FFFFFFFF",
+    "colorFrom": "DBFFBDFF"
+    },
+	"craftTime": 65,
+	"updateEffect": "none",
+	"consumes": {
+		"power": 6.3,
+		"items": {
+			"items": [
+               "plastanium/1",
+			   "silicon/2",
+			   "titanium/4",
+			]
+		}
+	},
+	"requirements": [
+        "copper/125",
+        "lead/165",
+		"silicon/125",
+        "plastanium/75"
+	],
+	"category": "crafting",
+	"research": "plastanium-compressor",
+	"outputItem": "plastrinium/1"
+}

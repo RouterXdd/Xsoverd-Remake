@@ -1,0 +1,72 @@
+{
+    "name": "Hellrail",
+    "type": "ItemTurret",
+    "size": 3,
+    "health": 900,
+    "maxAmmo": 100,
+    "ammoPerShot": 10,
+    "reload": 120,
+    "range": 380,
+    "targetAir": true,
+    "targetGround": true,
+    "rotateSpeed": 4,
+    "recoilAmount": 7,
+    "restitution": 0.2,
+    "shootSound": "DeadeyeShoot",
+    "ammoUseEffect": "casing3",
+    "buildCostMultiplier": 0.5,
+    "ammoTypes": {
+        "plastanium": {
+            "type": "RailBulletType",
+            "damage": 600,
+            "length": 380,
+            "ammoMultiplier": 2,
+            "pierce": true,
+            "colors": ["00b20d", "00b20d", "FFFFFF"],
+            "collidesTiles": true,
+            "pierceEffect": "railHit",
+            "updateEffect": "railTrail",
+            "hitEffect": "massiveExplosion",
+            "smokeEffect": "shootBig2",
+            "pierceDamageFactor": 0.5,
+            "fragBullets": 16,
+            "fragCone": 360,
+            "hitSound": "laser",
+            "fragBullet": {
+            "type": "LaserBulletType",
+            "colors": ["00b20d", "00b20d", "FFFFFF"],
+            "length": 180,
+            "despawnEffect": "none",
+            "damage": 45
+        }
+    }
+    },
+    "consumes": {
+        "power": 4.9
+  },
+    "requirements": [
+        {
+            "item": "plastanium",
+            "amount": 450
+        },
+        {
+            "item": "plastrinium",
+            "amount": 155
+        },
+        {
+            "item": "metaglass",
+            "amount": 950
+        },
+        {
+            "item": "silicon",
+            "amount": 1200
+        },
+        {
+            "item": "titanium",
+            "amount": 850
+        }
+    ],
+    "category": "turret",
+    "research": "foreshadow"
+}
+    

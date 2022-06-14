@@ -3,7 +3,7 @@ name: "Xrolovil Reconstructor"
 size: 3
 health: 550
 description: "Upgrades Unitcrafts to T2"
-constructTime: 275
+constructTime: 3875
 upgrades: [
   [
     dasher, invader
@@ -13,6 +13,9 @@ upgrades: [
   ]
   [
     copyer, creater
+  ]
+  [
+    plasmer, phaser
   ]
 ]
 consumes: {
@@ -25,7 +28,7 @@ items:{
 }
 }
 category: units
-research: aircraft-factory
+research: core-shard
 requirements: [
   graphite/55
   silicon/125

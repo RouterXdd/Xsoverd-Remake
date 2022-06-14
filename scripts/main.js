@@ -1,5 +1,7 @@
 require("maps");
-require("asteroid");
+require("units");
+
+
 /*
 //Запуск файла js
 require("file");

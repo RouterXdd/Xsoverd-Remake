@@ -1,7 +1,13 @@
-name: "Двойной хролофил"
-description: "Соединение двух хролофилов для большей прочности и силы"
+name: "Double Xrolovil"
+description: "Combination of two xrolovil for more power"
 color: "#008800"
 radioactivity: 0.4
 explosiveness:0.0
 flammability:0.0
 hardness: 2
+research: {
+parent: xrolovil
+requirements: [
+double-xrolovil/1
+]
+}

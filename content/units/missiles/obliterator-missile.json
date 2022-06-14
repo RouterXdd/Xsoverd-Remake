@@ -1,0 +1,48 @@
+ {     "name": "obliterator-missile",
+          "type": "missile",
+          "flying": true,
+          "maxRange": 5.2,
+          "health": 300,
+          "speed": 6,
+          "homingDelay": 8,
+          "lowAltitude": true,
+          "engineSize": 3,
+          "engineColor": "#e24f5e",
+          "hidden": true,
+            "useUnitCap": false,
+            "logicControllable": false,
+            "playerControllable": false,
+            "allowedInPayloads": false,
+          "weapons": [
+            {
+          "shootCone": 360,
+          "mirror": false,
+          "reload": 180,
+          "shootOnDeath": true,
+          "bullet": {
+            "type": "BombBulletType",
+              "splashDamageRadius": 30,
+        "instantDisappear": true,
+        "splashDamage": 120,
+        "killShooter": true,
+        "hittable": false,
+        "collidesAir": true,
+              "shootEffect": {
+                  "lifetime": 50,
+                  "waveStroke": 5,
+                  "waveLife": 8,
+                  "waveColor": "#FFFFFF",
+                  "sparkColor": "#e24f5e",
+                  "waveRad": 40,
+                  "smokeSize": 4,
+                  "smokes": 7,
+                  "smokeSizeBase": 0,
+                  "sparks": 10,
+                  "sparkRad": 40,
+                  "sparkLen": 6,
+                  "sparkStroke": 2
+              }
+        }
+      }
+      ]
+    }

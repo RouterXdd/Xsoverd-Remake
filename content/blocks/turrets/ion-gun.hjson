@@ -5,14 +5,14 @@ targetAir: true
 targetGround: true
 health: 850
 size: 2
-reloadTime: 80
+reload: 80
 inaccuracy: 0
 range: 270
 shots: 1
 ammoTypes: {
  titanium: {
  speed: 6
- lifetime: 120
+ lifetime: 45
  damage: 330
  ammoMultiplier: 2
  reloadMultiplier: 1
@@ -22,17 +22,28 @@ ammoTypes: {
  }
  thorium: {
  speed: 6
- lifetime: 120
+ lifetime: 50
  damage: 330
  ammoMultiplier: 5
  homingPower: 2
  homingRange: 60
  reloadMultiplier: 1.2
  sprite: "xsoverdr-Ion-bul"
- bulletWidth: 6
- bulletHeight: 10
+ bulletWidth: 8
+ bulletHeight: 12
+ rangeChange: 30
  }
  }
+ "shootEffect": {
+    "type": "WaveEffect",
+    "strokeFrom": 1,
+    "strokeTo": 0,
+    "lifetime": 35,
+    "sizeFrom": 0,
+    "sizeTo": 10,
+    "colorTo": "FFFFFFFF",
+    "colorFrom": "008dcbFF"
+    },
 category: turret
 research: scatter
 requirements: [

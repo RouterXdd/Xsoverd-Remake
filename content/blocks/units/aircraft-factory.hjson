@@ -3,7 +3,6 @@ description: "Make the three types of air crafts"
 type: UnitFactory
 health: 450
 size: 3
-unitCapModifier: 1
 consumes: {
 power: 2.8
 }
@@ -14,7 +13,7 @@ plans: [
       silicon/12
       copper/6
     ]
-    time: 125
+    time: 1125
   }
 {
     unit: copyer
@@ -22,7 +21,7 @@ plans: [
       silicon/8
       copper/14
     ]
-    time: 275
+    time: 1275
   }
 {
     unit: spiker
@@ -31,7 +30,7 @@ plans: [
       lead/12
       graphite/5
     ]
-    time: 375
+    time: 1675
   }
 ]
 category: units

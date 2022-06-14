@@ -1,5 +1,5 @@
-name:"Большая хролофиловая стена"
-description:"Чем больше тем лучше"
+name:"Big Xrolovil Wall"
+description:"Have more hp"
 type:Wall
 health:1800
 size:2

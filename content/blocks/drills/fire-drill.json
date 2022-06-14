@@ -1,0 +1,36 @@
+{
+  "type": "Drill",
+"name": "Fire drill",
+"description": "Use slag and energy to drill fast",
+"size": 3,
+"update": true,
+"tier": 6,
+"hasPower": true,
+"rotateSpeed": 3,
+"hasLiquids": true,
+"hasItems": true,
+"drillTime": 130,
+"warmupSpeed": 0.05,
+"drawRim": true,
+"drawMineItem": true,
+"updateEffect": "pulverizeMedium",
+"drillEffect": "mineBig",
+"heatColor": "db6d00",
+"liquidBoostIntensity": 1,
+"consumes": {
+  "power": 2.5,
+  "liquid": {
+    "liquid": "slag",
+	"amount": 0.25,
+	"booster": false
+  }
+},
+"requirements": [
+  "lead/90",
+  "silicon/70",
+  "metaglass/55",
+  "thorium/45"
+],
+"category": "production",
+"research": "blast-drill"
+}

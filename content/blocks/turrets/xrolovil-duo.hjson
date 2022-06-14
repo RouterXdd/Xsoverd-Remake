@@ -1,11 +1,11 @@
 type: ItemTurret
-name: "Хролофиловая турель"
-description: "Модифицированная хролофилом двойная турель"
+name: "Xrolovil duo"
+description: "Modificated by Xrolovil duo"
 targetAir: true
 targetGround: true
 health: 450
 size: 1
-reloadTime: 24
+reload: 24
 inaccuracy: 2
 range: 110
 shots: 1

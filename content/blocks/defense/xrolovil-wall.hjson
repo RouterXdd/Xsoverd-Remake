@@ -1,5 +1,5 @@
-name:"Хролофиловая стена"
-description:"Более лучшая версия медной стены"
+name:"Xrolovil Wall"
+description:"The better version of titanium wall"
 type:Wall
 health:450
 size:1

@@ -1,0 +1,15 @@
+{
+    "name": "termination",
+      "localizedName" : "Termination",
+      "damage": 166.66666,
+      "effect": {
+        "type": "WaveEffect",
+        "strokeFrom": 0.5,
+        "strokeTo": 0.5,
+        "lifetime": 35,
+        "sizeFrom": 15,
+        "sizeTo": 0,
+        "colorTo": "DD0000FF",
+        "colorFrom": "CC0000FF"
+      }
+}

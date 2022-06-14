@@ -1,0 +1,81 @@
+name:Invader
+type: flying
+flying: true
+health: 355
+speed: 2.85
+rotateSpeed: 18
+hitSize: 8
+range: 95
+circleTarget: true
+engineSize: 4
+lightRadius: 35
+lightColor: e65555
+weapons: [
+  {
+    name: invader-speed
+    x: 0
+    y: 0
+    mirror: false
+    shootSound: none
+    reload: 42
+    bullet: {
+      type: RailBulletType
+      damage: 25
+      pierceDamageFactor: 1
+      length: 80
+      recoil: -40
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+ {
+    name: invader-weapon
+    x: 8
+    y: 0
+    mirror: true
+    shootSound: none
+    reload: 10
+    bullet: {
+      type: BasicBulletType
+      damage: 10
+      speed: 3
+      lifetime: 30
+      pierceDamageFactor: 1
+      length: 2
+      recoil: 5
+      shootEffect: none
+      smokeEffect: none
+    }
+  }
+]
+abilities: [
+  {
+    type: MoveLightningAbility
+    minSpeed: 1.2
+    maxSpeed: 2.85
+    damage: 0
+    chance: 1
+    length: 1
+    color: 00000000
+    shootSound: none
+    shootEffect: {
+      type: ParticleEffect
+      layer: 99
+      particles: 1
+      sizeFrom: 8
+      sizeTo: 0
+      length: 0.01
+      lifetime: 15
+      region: xsoverdr-invader-effect
+      colorFrom: fffffff25
+      colorTo: ffffff00
+    }
+  }
+]
+research:{
+parent: dasher
+requirements: [
+coal/1250
+silicon/1550
+]
+}

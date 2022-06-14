@@ -1,0 +1,111 @@
+name:Strafer
+type: flying
+flying: true
+health: 1450
+speed: 1.85
+rotateSpeed: 12
+hitSize: 9.5
+range: 160
+circleTarget: true
+lightRadius: 60
+lightColor: e65555
+weapons: [
+ {
+    name: strafer-weapmain
+    x: 0
+    y: 6
+    mirror: false
+    shootSound: none
+    reload: 12
+    outline: false
+    bullet: {
+      type: EmpBulletType
+  scaleVelocity: true
+  damage: 5
+  radius: 6
+  unitDamageScl: 0.6
+  timeIncrease: 1
+  timeDuration: 120
+  speed: 5
+  lifetime: 32
+  sprite: circle-bullet
+  lenght: 2
+  recoil: 0
+  width: 4
+  height: 4
+  shrinkY: 0
+  frontColor: ffffff
+  backColor: D71526
+  lightColor: D71526
+  hitColor: D71526
+hitEffect: {
+        type: WaveEffect
+        lifetime: 20
+        sizeFrom: 6
+        sizeTo: 10
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: D71526
+        colorTo: D71526
+      }
+  trailWidth: 3
+  trailLength: 15
+  trailColor: D71526
+  despawnEffect: none
+  despawnHit: true
+    }
+}
+{
+    name: strafer-weap
+    x: 8
+    y: 1
+    mirror: true
+    shootSound: none
+    reload: 10
+    bullet: {
+      type: EmpBulletType
+  scaleVelocity: true
+  damage: 16
+  radius: 10
+  unitDamageScl: 0.6
+  timeIncrease: 1
+  timeDuration: 120
+  speed: 5
+  lifetime: 32
+  sprite: circle-bullet
+  lenght: 2
+  recoil: 0
+  width: 6
+  height: 6
+  shrinkY: 0
+  frontColor: ffffff
+  backColor: D71526
+  lightColor: D71526
+  hitColor: D71526
+hitEffect: {
+        type: WaveEffect
+        lifetime: 10
+        sizeFrom: 8
+        sizeTo: 10
+        strokeFrom: 2
+        strokeTo: 0
+        colorFrom: D71526
+        colorTo: D71526
+      }
+  trailWidth: 2
+  trailLength: 12
+  trailColor: D71526
+  despawnEffect: none
+  despawnHit: true
+    }
+}
+  ]
+
+research:{
+parent: scrite
+requirements: [
+silicon/1550
+plastrinium/1250
+metaglass/350
+]
+}

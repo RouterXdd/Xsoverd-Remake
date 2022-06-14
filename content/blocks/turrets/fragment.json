@@ -1,0 +1,23 @@
+{
+"type": "PointDefenseTurret",
+"localizedName": "Fragment",
+"description": "The upgraded version of segment. Have more range and destruction bullets",
+"shootLength": 10,
+"reload": 8,
+"rotateSpeed": 6,
+"range": 225,
+"size": 3,
+"health": 1200,
+"bulletDamage": 125,
+"consumes": {
+  "power": 9.5
+},
+"category": "turret",
+"research": "segment",
+"requirements": [
+  "silicon/520",
+  "thorium/220",
+  "phase-fabric/165",
+  "plastrinium/265"
+  ]
+}

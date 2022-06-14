@@ -1,0 +1,28 @@
+name: "Water craft factory"
+description: "Make the three types of water crafts"
+type: UnitFactory
+health: 450
+size: 3
+consumes: {
+power: 2.8
+}
+plans: [
+  {
+    unit: plasmer
+    requirements: [
+      silicon/12
+      metaglass/6
+    ]
+    time: 3650
+  }
+]
+category: units
+requirements: [
+  silicon/155
+  lead/85
+  metaglass/65
+]
+research: core-shard
+
+
+

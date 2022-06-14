@@ -2,10 +2,13 @@
     "type": "PowerTurret",
     "size": 3,
     "health": 500,
-    "range": 260,
-    "reloadTime": 165,
+    "range": 175,
+    "reload": 165,
+    "shoot": {
     "shots": 3,
-    "burstSpacing": 12,
+    "shotDelay": 12,
+    "burstSpacing": 8
+    },
     "inaccuracy": 7,
     "targetAir": false,
     "targetGround": true,
@@ -14,31 +17,21 @@
     "restitution": 0.05,
     "rotateSpeed": 2.5,
     "shootSound": "laser",
-    "powerUse": 5,
+    "consumes": {
+    "power": 5
+    },
     "hasPower": true,
     "shootType": {
-        "type": "ArtilleryBulletType",
-        "status": {
-            "name": "overheat",
-            "localizedName" : "Overheat",
-            "speedMultiplier": 0.6,
-            "reloadMultiplier": 0.2,
-            "effect": "smoke"
-        },
+        "type": "LaserBulletType",
+        "status": "overheat",
+        "lenght": 175,
+        "colors": ["ca0000", "ca0000", "FFFFFF"],
         "damage": 10,
-        "speed": 3,
-        "splashDamage": 15,
-        "splashDamageRadius": 70,
+        "speed": 0,
         "statusDuration": 100,
-        "height": 25,
-        "width": 10,
-        "lifetime": 90,
-        "lightning": 5,
-        "lightningLength": 6,
-        "frontColor": "00d676",
-        "backColor": "00b765",
+        "lifetime": 40,
         "hitSound": "spark",
-        "hitEffect": "shieldWave",
+        "hitEffect": "none",
         "smokeEffect": "hitFuse"
     },
     "requirements": [

@@ -1,0 +1,95 @@
+{
+"name": "Sworder",
+"description": "[cyan]Attack whis swords units and buildings.",
+"research": {
+"parent": "groundcraft-factory",
+"requirements": [
+"titanium/300",
+"lead/340",
+"silicon/400"
+]
+},
+"type": "mech",
+"armor": 4,
+"hitSize": 10,
+"commandLimit": 6,
+"speed": 0.4,
+"flying": false,
+"health": 235,
+"range": 50,
+"immunities": [
+		"freezing"
+		],
+"weapons": [
+  {
+  "name": "sworder-weap",
+  "x": 5,
+  "y": 3,
+  "reload": 10,
+  "recoil": -50,
+  "alternate": true,
+  "rotate": true,
+  "top": false,
+  "mirror": true,
+  "shots": 1,
+  "shootSound": "laser",
+  "bullet": {
+    "type": "BasicBulletType",
+	"sprite" : "circle-bullet",
+	"damage": 45,	
+	"height": 2,
+	"width": 2,			
+	"speed": 5,
+	"lifetime": 10,
+	"shrinkX": 0,
+	"shrinkY": 0,
+	"lightColor": "00DDFFFF",
+    "hitEffect": {
+    "type": "ParticleEffect",
+    "particles": 10,
+    "length": 2,
+    "lifetime": 20,
+    "interp": "circleOut",
+    "cone": 360,
+    "colorFrom": "009CFFFF",
+    "colorTo": "00CCFFFF",
+    "sizeFrom": 2,
+    "sizeTo": 0
+    },
+    "despawnEffect": {
+        "type": "ParticleEffect",
+        "particles": 10,
+        "length": 10,
+        "lifetime": 20,
+        "interp": "circleOut",
+        "cone": 360,
+        "colorFrom": "009CFFFF",
+        "colorTo": "00CCFFFF",
+        "sizeFrom": 2,
+        "sizeTo": 0
+    },
+	"smokeEffect":  "none",
+	"pierce": false,
+	"absorbable": false,
+	"trailChance": 1,
+	"trailEffect": {
+    "type": "ParticleEffect",
+    "particles": 6,
+    "length": 3,
+    "baseLength": 3,
+    "lifetime": 25,
+    "interp": "circleOut",
+    "cone": 360,
+    "offset": 3,
+    "colorFrom": "009CFFFF",
+    "colorTo": "00CCFFFF",
+    "sizeFrom": 3,
+    "sizeTo": 0
+	},
+    "frontColor": "009CFFFF",
+    "backColor": "00CCFFFF"
+     }
+  }
+]
+}
+ 
