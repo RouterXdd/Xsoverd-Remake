@@ -1,5 +1,5 @@
 {	
-    "localizedName": "Combinator",
+    "name": "Combinator",
     "description": "[cyan]Combinate xrolovil and titanium to make xrotine",
     "type": "GenericCrafter",
 	"drawer": {

@@ -4,7 +4,7 @@ category: power
 size: 2
 health: 150
 maxNodes: 16
-laserRange: 13
+laserRange: 18
 placeableLiquid: true
 laserColor1: 7bb5d2
 laserColor2: 6393ab

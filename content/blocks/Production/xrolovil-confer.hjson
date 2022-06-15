@@ -1,5 +1,5 @@
 {	
-    "localizedName": "Xrolovil Sintesator",
+    "name": "Xrolovil Sintesator",
     "description": "[green]Transform scrap to xrolovil",
     "type": "GenericCrafter",
 	"size": 2,

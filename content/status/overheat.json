@@ -1,6 +1,5 @@
 {
-    "name": "overheat",
-    "localizedName" : "Overheat",
+    "name": "Overheat",
     "speedMultiplier": 0.6,
     "reloadMultiplier": 0.2,
     "effect": "smoke"

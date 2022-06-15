@@ -2,7 +2,7 @@
     "type": "PowerTurret",
     "researchCostMultiplier": 1.1,
     "description": "Fires the melting plasma balls at enemies",
-    "localizedName": "Melter",
+    "name": "Melter",
     "size": 2,
     "health": 275,
     "reload": 20,

@@ -1,6 +1,5 @@
 {
-    "name": "termination",
-      "localizedName" : "Termination",
+    "name": "Termination",
       "damage": 166.66666,
       "effect": {
         "type": "WaveEffect",

@@ -9,7 +9,7 @@
 "rotateSpeed": 3,
 "hasLiquids": true,
 "hasItems": true,
-"drillTime": 130,
+"drillTime": 95,
 "warmupSpeed": 0.05,
 "drawRim": true,
 "drawMineItem": true,

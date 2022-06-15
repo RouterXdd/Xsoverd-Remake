@@ -2,7 +2,7 @@
     "type": "PowerTurret",
     "researchCostMultiplier": 1.2,
     "description": "[purpure]Fires peircing soul energy swords",
-    "localizedName": "Confuser",
+    "name": "Confuser",
     "size": 2,
     "health": 850,
     "reload": 30,

@@ -1,6 +1,6 @@
 {	
-    "localizedName": "Plastrinium klin",
-    "description": "[green]Make the[blue] plastrinium",
+    "name": "Plastrinium klin",
+    "description": "[lime]Make the plastrinium",
     "type": "GenericCrafter",
 	"size": 2,
 	"hasPower": true,

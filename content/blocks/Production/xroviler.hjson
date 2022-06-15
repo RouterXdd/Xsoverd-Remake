@@ -1,5 +1,5 @@
 {	
-    "localizedName": "Xroviler",
+    "name": "Xroviler",
     "description": "[green]Combinate xrolovil to make double xrolovil",
     "type": "GenericCrafter",
 	"drawer": {

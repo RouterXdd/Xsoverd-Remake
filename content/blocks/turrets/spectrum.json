@@ -15,7 +15,10 @@
 "power": 8
 },
 "shoot":{
-"shots": 5
+	"type": "ShootSpread",
+	"shots": 5,
+	"firstShotDelay": 0,
+	"spread": 15
 },
 "shootType": {
 "type":"LaserBulletType",

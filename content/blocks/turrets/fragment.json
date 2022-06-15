@@ -1,6 +1,6 @@
 {
 "type": "PointDefenseTurret",
-"localizedName": "Fragment",
+"name": "Fragment",
 "description": "The upgraded version of segment. Have more range and destruction bullets",
 "shootLength": 10,
 "reload": 8,
@@ -8,7 +8,7 @@
 "range": 225,
 "size": 3,
 "health": 1200,
-"bulletDamage": 125,
+"bulletDamage": 145,
 "consumes": {
   "power": 9.5
 },
