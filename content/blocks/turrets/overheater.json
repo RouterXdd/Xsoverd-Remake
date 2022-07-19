@@ -18,7 +18,10 @@
     "rotateSpeed": 2.5,
     "shootSound": "laser",
     "consumes": {
-    "power": 5
+    "power": 5,
+		"coolant": {
+		  "amount": 0.3
+		}
     },
     "hasPower": true,
     "shootType": {

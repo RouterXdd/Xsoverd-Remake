@@ -16,7 +16,7 @@ plans: [
         unit: heal-deactivator
         requirements: [
             {
-         unit: dagger
+         PayloadStack: dagger
          amount: 4
          }
          {

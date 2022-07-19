@@ -12,7 +12,6 @@
 "type": "mech",
 "armor": 4,
 "hitSize": 10,
-"commandLimit": 6,
 "speed": 0.4,
 "flying": false,
 "health": 235,

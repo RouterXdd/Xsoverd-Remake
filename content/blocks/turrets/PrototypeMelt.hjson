@@ -13,10 +13,9 @@ firingMoveFract: 0.5
 shootDuration: 220
 consumes:{
 power: 32.5
-liquid:{
-    liquid: water
+  coolant: {
     amount: 0.6
-    }
+  }
 }
 shootType: {
 type: ContinuousLaserBulletType
@@ -36,7 +35,6 @@ loopSound: beam
 loopSoundVolume: 2
 requirements: [
 silicon/675
-thorium/285
 titanium/375
 lead/495
 copper/725

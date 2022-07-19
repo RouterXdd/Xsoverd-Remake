@@ -8,7 +8,11 @@ size: 1
 reload: 24
 inaccuracy: 2
 range: 110
-shots: 1
+consumes:{
+  coolant: {
+    amount: 0.1
+  }
+}
 ammoTypes: {
  xrolovil: {
  speed: 2
@@ -16,8 +20,8 @@ ammoTypes: {
  damage: 22
  ammoMultiplier: 4
  reloadMultiplier: 1
- bulletWidth: 8
- bulletHeight: 12
+ width: 8
+ height: 12
  }
  silicon: {
  speed: 2
@@ -27,8 +31,8 @@ ammoTypes: {
  homingPower: 1
  homingRange: 20
  reloadMultiplier: 1.4
- bulletWidth: 8
- bulletHeight: 12
+ width: 8
+ height: 12
  }
  }
 category: turret

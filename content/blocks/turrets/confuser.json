@@ -20,7 +20,10 @@
     "rotateSpeed": 3,
     "shootSound": "missile",
     "consumes":{
-    "power": 11.4
+    "power": 11.4,
+		"coolant": {
+		  "amount": 0.2
+		}
     },
     "hasPower": true,
     "shootType": {

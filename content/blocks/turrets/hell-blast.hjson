@@ -14,6 +14,9 @@ recoilAmount: 2
 reload: 90
 consumes:{
 power: 8
+  coolant: {
+    amount: 0.2
+  }
 }
 shootShake: 3
 smokeEffect: none

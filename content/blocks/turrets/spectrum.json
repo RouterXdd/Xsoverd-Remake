@@ -12,7 +12,10 @@
 "targetGround": true,
 "targetAir": true,
 "consumes":{
-"power": 8
+"power": 8,
+	"coolant": {
+	  "amount": 0.3
+	}
 },
 "shoot":{
 	"type": "ShootSpread",

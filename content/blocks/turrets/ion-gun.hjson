@@ -9,6 +9,11 @@ reload: 80
 inaccuracy: 0
 range: 270
 shots: 1
+consumes:{
+  coolant: {
+    amount: 0.2
+  }
+}
 ammoTypes: {
  titanium: {
  speed: 6

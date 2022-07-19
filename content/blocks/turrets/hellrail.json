@@ -10,9 +10,9 @@
     "targetAir": true,
     "targetGround": true,
     "rotateSpeed": 4,
-    "recoilAmount": 7,
+    "recoil": 7,
     "restitution": 0.2,
-    "shootSound": "DeadeyeShoot",
+    "shootSound": "railgun",
     "ammoUseEffect": "casing3",
     "buildCostMultiplier": 0.5,
     "ammoTypes": {
@@ -32,6 +32,30 @@
             "fragBullets": 16,
             "fragCone": 360,
             "hitSound": "laser",
+            "pointEffectSpace": 42,
+            "pointEffect": {
+                "type": "MultiEffect",
+                "effects": [
+                  {
+                    "lightOpacity": 0.25,
+                    "lightScl": 1,
+                    "type": "ParticleEffect",
+                    "length": 0,
+                    "baseLength": 30,
+                    "randLength": false,
+                    "lifetime": 110,
+                    "particles": 1,
+                    "cone": 0,
+                    "interp": "pow3In",
+                    "sizeInterp": "linear",
+                    "region": "xsoverdr-railblast",
+                    "sizeFrom": 14,
+                    "sizeTo": 7,
+                    "colorFrom": "0d8200",
+                    "colorTo": "0d820000"
+                  }
+                ]
+            },
             "fragBullet": {
             "type": "LaserBulletType",
             "colors": ["00b20d", "00b20d", "FFFFFF"],
@@ -42,7 +66,10 @@
     }
     },
     "consumes": {
-        "power": 4.9
+        "power": 4.9,
+            "coolant": {
+              "amount": 0.3
+            }
   },
     "requirements": [
         {

@@ -20,7 +20,10 @@
     "rotateSpeed": 3.5,
     "shootSound": "sap",
     "consumes":{
-    "power": 7.2
+    "power": 7.2,
+		"coolant": {
+		  "amount": 0.2
+		}
     },
     "hasPower": true,
     "shootType": {

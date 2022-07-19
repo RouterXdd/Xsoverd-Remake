@@ -6,6 +6,9 @@ health: 750
 reload: 10
 consumes:{
 power: 1.6
+  coolant: {
+    amount: 0.2
+  }
 }
 rotateSpeed: 3.4
 targetHealing: true

@@ -5,17 +5,21 @@
 	"details": "Your gonna need alot of ammo for this",
 	"health": 1200,
 	"size": 3,
-	"reloadTime": 14,
+	"reload": 14,
 	"range": 275,
-	"recoilAmount": 2,
-	"shootShake": 4,
+	"recoil": 2,
+	"shake": 4,
 	"ammoUseEffect": "none",
 	"inaccuracy": 10,
+	"consumes":{
+		"coolant": {
+		  "amount": 0.3
+		}
+	  },
 	"shoot": {
 		"shots": 10,
          "shotDelay": 8
 	},
-	"spread": 6,
 	"xRand": 8,
 	"rotateSpeed": 6,
 	"shootSound": "missile",
@@ -25,7 +29,7 @@
 			"speed": 5,
 			"damage": 48,
 			"status": "blasted",
-			"StatusDuration": 70,
+			"statusDuration": 70,
 			"width": 7,
 			"height": 18,
 			"hitEffect": "blastExplosion",
