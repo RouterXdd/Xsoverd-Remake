@@ -18,6 +18,8 @@
             "logicControllable": false,
             "playerControllable": false,
             "allowedInPayloads": false,
+            "createWreck": false,
+            "createScorch": false,
           "weapons": [
             {
           "shootCone": 360,

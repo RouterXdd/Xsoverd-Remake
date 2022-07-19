@@ -2,4 +2,12 @@ name: "plasma-base"
 planet: serpulo
 sector: 95
 difficulty: 7
-research: laboratory
+research: {
+parent: laboratory
+objectives: [
+    {
+      type: SectorComplete
+      preset: laboratory
+    }
+  ]
+} 

@@ -3,4 +3,12 @@ captureWave: 20
 planet: serpulo
 sector: 12
 difficulty: 6
-research: nuclearComplex
+research: {
+parent: nuclearComplex
+objectives: [
+    {
+      type: SectorComplete
+      preset: nuclearComplex
+    }
+  ]
+}
