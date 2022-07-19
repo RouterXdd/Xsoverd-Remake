@@ -1,12 +1,4 @@
 
-const forgottenbase = extend(SectorPreset, "forgotten-base", Planets.serpulo, 78, {
-    captureWave: 40,
-    localizedName: "Forgotten Base",
-    description: "Here was old base, but now this base is destroyed and there plased mini crux launch base.[red] NO, you dont need destroy base you need survive from corrupted. They go from cave",
-    difficulty: 7,
-    alwaysUnlocked: true
-});
-
 const corruptedcave = extend(SectorPreset, "corrupted-cave", Planets.serpulo, 250, {
     captureWave: 40,
     localizedName: "Corrupted Cave",

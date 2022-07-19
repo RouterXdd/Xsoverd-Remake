@@ -1,0 +1,14 @@
+name: "forgotten-base"
+captureWave: 40
+planet: serpulo
+sector: 78
+difficulty: 7
+research: {
+parent: ruinousShores
+objectives: [
+    {
+      type: SectorComplete
+      preset: ruinousShores
+    }
+  ]
+}
