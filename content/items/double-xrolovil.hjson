@@ -1,6 +1,7 @@
 name: "Double Xrolovil"
 description: "Combination of two xrolovil for more power"
 color: "#008800"
+cost: 1.25
 radioactivity: 0.4
 explosiveness:0.0
 flammability:0.0

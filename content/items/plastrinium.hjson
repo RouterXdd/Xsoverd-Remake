@@ -1,6 +1,7 @@
 name: "Plastrinium"
 description: "The upgraded plastanium with titanium and silicon"
 color: "#cbd95f"
+cost: 3
 radioactivity: 0.0
 explosiveness:0.0
 flammability:0.3

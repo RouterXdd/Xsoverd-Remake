@@ -1,0 +1,13 @@
+name: "Light crystal"
+description: "The crystal from the sun. Used for flame-armored techologies"
+color: "#b5bb00"
+cost: 3.8
+radioactivity: 0.0
+explosiveness:0.0
+flammability:3.4
+hardness: 4
+research: {
+parent: surge-alloy
+}
+frameTime: 6.5
+frames: 4
