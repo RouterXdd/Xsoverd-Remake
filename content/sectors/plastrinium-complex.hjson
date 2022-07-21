@@ -1,0 +1,13 @@
+name: "plastrinium-complex"
+planet: serpulo
+sector: 182
+difficulty: 8
+research: {
+parent: tarFields
+objectives: [
+    {
+      type: SectorComplete
+      preset: tarFields
+    }
+  ]
+} 

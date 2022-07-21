@@ -1,0 +1,12 @@
+type: MendProjector
+health: 2500
+size: 2
+range: 3
+phaseBoost: 1
+phaseRangeBoost: 0
+reload: 10
+healPercent: 0.5
+requirements: [
+]
+buildVisibility: editorOnly
+category: effect
