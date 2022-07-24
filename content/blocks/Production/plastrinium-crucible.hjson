@@ -19,7 +19,6 @@ name: Plastrinium Crucible
   strokeTo: 2.5
   lenFrom: 8
   lenTo: 0
-  drag: 0.3
     colorTo: FFFFFFFF
     colorFrom: DBFFBDFF
 	}

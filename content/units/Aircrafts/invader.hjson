@@ -21,7 +21,6 @@ weapons: [
     bullet: {
       type: RailBulletType
       damage: 25
-      pierceDamageFactor: 1
       length: 80
       recoil: -40
       shootEffect: none
@@ -40,8 +39,6 @@ weapons: [
       damage: 10
       speed: 3
       lifetime: 30
-      pierceDamageFactor: 1
-      length: 2
       recoil: 5
       shootEffect: none
       smokeEffect: none
