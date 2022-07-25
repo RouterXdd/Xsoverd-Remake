@@ -32,7 +32,8 @@ speed: 6
 lifetime: 30
 bulletWidth: 18
 bulletHeight: 24
-colors: ["00b20d", "00b20d", FFFFFF"]
+colors: ["00b20d", "00b20d", "FFFFFF"]
+
 hitEffect: {
 type: ParticleEffect
 particles: 12
@@ -53,7 +54,7 @@ hitSound: laser
 fragBullet: {
 type: LaserBulletType
 length: 180
-colors: ["00b20d", "00b20d", FFFFFF"]
+colors: ["00b20d", "00b20d", "FFFFFF"]
 hitEffect: {
 type: ParticleEffect
 particles: 6

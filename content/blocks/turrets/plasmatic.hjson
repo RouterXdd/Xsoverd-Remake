@@ -79,11 +79,13 @@ shootType: {
 category: turret
 research: {
 parent: xrolovil-duo
-objectives: [plasma-base]
-}
+objectives: [ 
+plasma-base
+]
 requirements: [
   copper/90
   graphite/80
   silicon/60
   double-xrolovil/35
 ]
+}

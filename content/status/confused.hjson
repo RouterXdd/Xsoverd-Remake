@@ -3,7 +3,9 @@ healthMultiplier: 0.95
 speedMultiplier: -1
 effect: {
 type: MultiEffect
-effects: [melting, {
+effects: [
+melting
+{
 type: ParticleEffect
 sizeFrom: 3
 sizeTo: 0

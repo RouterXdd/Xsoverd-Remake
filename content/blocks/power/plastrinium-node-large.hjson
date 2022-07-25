@@ -18,5 +18,7 @@ requirements: [
 
 research: {
 parent: plastrinium-node
-objectives: [plastrinium]
+objectives: [
+plastrinium
+]
 }

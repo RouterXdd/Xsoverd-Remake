@@ -17,5 +17,7 @@ requirements: [
 
 research: {
 parent: power-node
-objectives: [plastrinium]
+objectives: [
+plastrinium
+]
 }

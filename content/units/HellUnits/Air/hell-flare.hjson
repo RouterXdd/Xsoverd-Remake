@@ -21,7 +21,11 @@ weapons: [
     bullet: {
     type: LaserBulletType
   length: 70
-  colors: ["00b20d", "00b20d", FFFFFF"]
+  colors: [
+  "00b20d",
+  "00b20d",
+  FFFFFF"
+  ]
   scaleVelocity: true
   damage: 19
   radius: 10
