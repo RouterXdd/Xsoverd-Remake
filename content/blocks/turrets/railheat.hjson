@@ -1,0 +1,64 @@
+type: PowerTurret
+size: 3
+range: 276
+health: 1370
+reload: 50
+consumes:{
+power: 2.35
+  coolant: {
+    amount: 0.3
+  }
+}
+heatRequirement: 4
+maxHeatEfficiency: 3
+rotateSpeed: 1.3
+shootSound: laser
+shootType: {
+type: BasicBulletType
+            damage: 180
+            speed: 6
+            lifetime: 46
+            width: 10
+            height: 16
+            updateEffect: railTrail
+            hitEffect: massiveExplosion
+            smokeEffect: shootBig2
+            hitSound: laser
+            trailWidth: 3
+            trailLength: 15
+            trailColor: cbd97f
+            despawnEffect: none
+            despawnHit: true
+            pointEffectSpace: 30
+            pointEffect: {
+                type: MultiEffect
+                effects: [
+                  {
+                    lightOpacity: 0.25
+                    lightScl: 1
+                    type: ParticleEffect
+                    length: 0
+                    baseLength: 40
+                    randLength: false
+                    lifetime: 60
+                    particles: 1
+                    cone: 0
+                    interp: pow3In
+                    sizeInterp: linear
+                    region: xsoverdr-railblast
+                    sizeFrom: 10
+                    sizeTo: 3
+                    colorFrom: 9cb664
+                    colorTo: 9cb66400
+                  }
+                ]
+            }
+}
+category: turret
+research: lancer
+requirements: [
+    lead/76
+    graphite/130
+    silicon/90
+    plastanium/115
+]
