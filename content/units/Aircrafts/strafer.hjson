@@ -6,7 +6,7 @@ speed: 1.85
 rotateSpeed: 12
 hitSize: 9.5
 range: 160
-circleTarget: true
+circleTarget: false
 lightRadius: 60
 lightColor: e65555
 weapons: [
@@ -17,10 +17,8 @@ weapons: [
     mirror: false
     shootSound: none
     reload: 12
-    outline: false
     bullet: {
       type: EmpBulletType
-  scaleVelocity: true
   damage: 5
   radius: 6
   unitDamageScl: 0.6
@@ -29,7 +27,6 @@ weapons: [
   speed: 5
   lifetime: 32
   sprite: circle-bullet
-  lenght: 2
   recoil: 0
   width: 4
   height: 4
@@ -64,7 +61,6 @@ hitEffect: {
     reload: 10
     bullet: {
       type: EmpBulletType
-  scaleVelocity: true
   damage: 16
   radius: 10
   unitDamageScl: 0.6
@@ -73,7 +69,6 @@ hitEffect: {
   speed: 5
   lifetime: 32
   sprite: circle-bullet
-  lenght: 2
   recoil: 0
   width: 6
   height: 6

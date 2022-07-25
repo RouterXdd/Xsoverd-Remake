@@ -18,7 +18,6 @@ weapons: [
     reload: 20
     bullet: {
       type: EmpBulletType
-  scaleVelocity: true
   damage: 8
   radius: 10
   unitDamageScl: 0.6
@@ -27,7 +26,6 @@ weapons: [
   speed: 5
   lifetime: 19
   sprite: circle-bullet
-  lenght: 2
   recoil: 1
   width: 6
   height: 6

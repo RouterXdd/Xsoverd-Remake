@@ -30,7 +30,6 @@
   "rotate": true,
   "top": false,
   "mirror": true,
-  "shots": 1,
   "shootSound": "laser",
   "bullet": {
     "type": "BasicBulletType",

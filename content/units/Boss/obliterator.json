@@ -15,11 +15,9 @@
 	"range": 200,
 	"targetAir": true,
 	"rotateSpeed": 4,
-  "legTrns": 0.8,
 	"legCount": 6,
 	"legMoveSpace": 1.6,
 	"legLength": 80,
-	"visualElevation": 0.55,
   "shadowElevation": 0.75,
 	"allowLegStep": true,
 	"hovering": true,
@@ -51,7 +49,6 @@
     "width": 20,
     "height": 20,
     "sprite": "circle-bullet",
-    "pierceDamageFactor": 0.5,
     "frontColor": "FF0000FF",
     "backColor": "AA0000FF",
     "lifetime": 32.5,
@@ -110,38 +107,25 @@
     "recoil": 2,
     "shake": 0,
     "rotate": true,
+    "shootY": 3,
     "shootSound": "shootBig",
     "shoot": {
       "type": "ShootSpread",
       "shots": 3,
       "firstShotDelay": 0,
-      "spread": 15,
-      "y": 3
+      "spread": 15
       },
     "shootCone": 50,
 	"bullet": {
     "type": "BasicBulletType",
     "width": 16,
     "height": 22,
-    "pierceDamageFactor": 0.5,
+    "pierceCap": 3,
     "lifetime": 25,
     "speed": 8,
     "damage": 100,
     "smokeEffect": "none"
-  },
-      "shootEffect": {
-      "type": "ParticleEffect",
-      "line": true,
-      "particles": 6,
-      "lifetime": 40,
-      "offset": 50,
-      "length": 35,
-      "cone": -360,
-      "lenFrom": 5,
-      "lenTo": 0,
-      "colorFrom": "CC0000FF",
-      "colorTo": "DD0000FF"
-      }
+  }
     },
       {
         "name": "obliterator-launcher-equip",
@@ -153,29 +137,20 @@
         "shake": 0,
         "rotate": true,
         "shootSound": "shootBig",
-        "shots": 5,
+        "shoot": {
+          "type": "ShootSpread",
+          "shots": 5,
+          "firstShotDelay": 0,
+          "spread": 10
+          },
         "shootCone": 50,
       "bullet": {
         "type": "BulletType",
-        "width": 22,
-        "height": 25,
+        "lifetime": 0,
         "speed": 0,
         "smokeEffect": "none",
         "spawnUnit": "obliterator-missile"
-      },
-          "shootEffect": {
-              "type": "ParticleEffect",
-              "line": true,
-              "particles": 20,
-              "lifetime": 15,
-              "offset": 50,
-              "length": 25,
-              "cone": 0,
-              "lenFrom": 10,
-              "lenTo": 0,
-              "colorFrom": "CC0000FF",
-              "colorTo": "DD0000FF"
-              }
+      }
       }
   ]
 }

@@ -21,7 +21,6 @@ weapons: [
       length: 55
       shootEffect: lancerLaserShoot
       hitEffect: hitLaser
-      color: bf92f9
       lightColor: a488eb
     }
   }

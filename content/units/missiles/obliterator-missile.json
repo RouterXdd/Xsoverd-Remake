@@ -12,7 +12,6 @@
           "trailColor": "#e24f5e",
           "trailWidth": 2.5,
           "trailLength": 5,
-          "trailRotation": true,
           "hidden": true,
             "useUnitCap": false,
             "logicControllable": false,
@@ -35,19 +34,7 @@
         "hittable": false,
         "collidesAir": true,
               "shootEffect": {
-                  "lifetime": 50,
-                  "waveStroke": 5,
-                  "waveLife": 8,
-                  "waveColor": "#FFFFFF",
-                  "sparkColor": "#e24f5e",
-                  "waveRad": 40,
-                  "smokeSize": 4,
-                  "smokes": 7,
-                  "smokeSizeBase": 0,
-                  "sparks": 10,
-                  "sparkRad": 40,
-                  "sparkLen": 6,
-                  "sparkStroke": 2
+                  "lifetime": 50
               }
         }
       }

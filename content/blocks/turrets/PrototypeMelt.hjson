@@ -4,8 +4,8 @@ details: "This details of old russian name of meltdown: После создан�
 type: LaserTurret
 health: 1750
 size: 3
-shootSnake: 2
-recoilAmount: 3
+shake: 2
+recoil: 1.5
 range: 190
 reload: 155
 shootCone: 5

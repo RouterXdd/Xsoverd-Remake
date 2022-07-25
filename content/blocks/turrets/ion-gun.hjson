@@ -8,7 +8,6 @@ size: 2
 reload: 80
 inaccuracy: 0
 range: 270
-shots: 1
 consumes:{
   coolant: {
     amount: 0.2
@@ -22,8 +21,8 @@ ammoTypes: {
  ammoMultiplier: 2
  reloadMultiplier: 1
  sprite: "xsoverdr-Ion-bul"
- bulletWidth: 6
- bulletHeight: 10
+ width: 6
+ height: 10
  }
  thorium: {
  speed: 6
@@ -34,21 +33,21 @@ ammoTypes: {
  homingRange: 60
  reloadMultiplier: 1.2
  sprite: "xsoverdr-Ion-bul"
- bulletWidth: 8
- bulletHeight: 12
+ width: 8
+ height: 12
  rangeChange: 30
  }
  }
- "shootEffect": {
-    "type": "WaveEffect",
-    "strokeFrom": 1,
-    "strokeTo": 0,
-    "lifetime": 35,
-    "sizeFrom": 0,
-    "sizeTo": 10,
-    "colorTo": "FFFFFFFF",
-    "colorFrom": "008dcbFF"
-    },
+ shootEffect: {
+    type: WaveEffect
+    strokeFrom: 1
+    strokeTo: 0
+    lifetime: 35
+    sizeFrom: 0
+    sizeTo: 10
+    colorTo: "FFFFFFFF"
+    colorFrom: "008dcbFF"
+    }
 category: turret
 research: scatter
 requirements: [

@@ -1,0 +1,29 @@
+type: HeatProducer
+health: 80
+size: 2
+consumes: {
+    items: {
+        items:[ 
+            coal/3
+            ]
+     }
+}
+heatOutput: 4
+drawer: {
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawDefault
+        }
+        {
+            type: DrawHeatOutput
+        }
+    ]
+}
+category: crafting
+research: silicon-smelter
+requirements: [
+    lead/55
+    graphite/48
+    silicon/35
+]
