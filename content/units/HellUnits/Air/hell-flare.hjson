@@ -1,41 +1,53 @@
-name:Hell flare
-type: flying
-flying: true
-health: 95
-speed: 3.25
-rotateSpeed: 20
-itemCapacity: 20
-commandLimit: 6
-range: 80
-circleTarget: true
-lightRadius: 35
-lightColor: e65555
-weapons: [
- {
-    name: flare-weapon
-    x: 3
-    y: 0
-    mirror: true
-    shootSound: none
-    reload: 10
-    bullet: {
-    type: LaserBulletType
-  length: 70
-  colors: ["00b20d", "00b20d", FFFFFF"]
-  scaleVelocity: true
-  damage: 19
-  radius: 10
-  lifetime: 45
-  recoil: 0
-  shrinkY: 0
+{
+    
+    itemCapacity : 20
+    commandLimit : 6
+    circleTarget : true
+    rotateSpeed : 20
+    lightRadius : 35
+    lightColor : e65555
+    flying : true
+    health : 95
+    speed : 3.25
+    range : 80
+    name : Hell flare
+    type : flying
+    
+    research : {
+        
+        parent : aircraft-factory
+        
+        requirements : [
+            silicon/1450
+            plastanium/650
+        ]
     }
-}
-  ]
-
-research:{
-parent: aircraft-factory
-requirements: [
-silicon/1450
-plastanium/650
-]
+    
+    weapons : [{
+        
+        shootSound : none
+        mirror : true
+        reload : 10
+        name : flare-weapon
+        x : 3
+        y : 0
+        
+        bullet : {
+            
+            scaleVelocity : true
+            lifetime : 45
+            shrinkY : 0
+            length : 70
+            damage : 19
+            radius : 10
+            recoil : 0
+            type : LaserBulletType
+            
+            colors : [
+                00b20d
+                00b20d
+                FFFFFF"
+            ]
+        }
+    }]
 }

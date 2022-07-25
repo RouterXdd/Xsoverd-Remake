@@ -1,43 +1,50 @@
-type: ItemTurret
-name: "Xrolovil duo"
-description: "Modificated by Xrolovil duo"
-targetAir: true
-targetGround: true
-health: 450
-size: 1
-reload: 24
-inaccuracy: 2
-range: 110
-consumes:{
-  coolant: {
-    amount: 0.1
-  }
+{
+    
+    targetGround : true
+    description : Modificated by Xrolovil duo
+    inaccuracy : 2
+    targetAir : true
+    category : turret
+    research : duo
+    health : 450
+    reload : 24
+    range : 110
+    type : ItemTurret
+    name : Xrolovil duo
+    size : 1
+    
+    requirements : [
+        copper/65
+        xrolovil/35
+    ]
+    
+    ammoTypes : {
+        xrolovil : {
+            reloadMultiplier : 1
+            ammoMultiplier : 4
+            lifetime : 60
+            damage : 22
+            height : 12
+            speed : 2
+            width : 8
+        }
+        
+        silicon : {
+            reloadMultiplier : 1.4
+            ammoMultiplier : 5
+            homingPower : 1
+            homingRange : 20
+            lifetime : 60
+            damage : 14
+            height : 12
+            speed : 2
+            width : 8
+        }
+    }
+    
+    consumes : {
+        coolant : {
+            amount : 0.1
+        }
+    }
 }
-ammoTypes: {
- xrolovil: {
- speed: 2
- lifetime: 60
- damage: 22
- ammoMultiplier: 4
- reloadMultiplier: 1
- width: 8
- height: 12
- }
- silicon: {
- speed: 2
- lifetime: 60
- damage: 14
- ammoMultiplier: 5
- homingPower: 1
- homingRange: 20
- reloadMultiplier: 1.4
- width: 8
- height: 12
- }
- }
-category: turret
-research: duo
-requirements: [
- copper/65
- xrolovil/35
-]

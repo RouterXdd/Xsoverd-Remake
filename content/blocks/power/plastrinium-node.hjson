@@ -1,21 +1,27 @@
-type: PowerNode
-category: power
-
-health: 85
-maxNodes: 12
-laserRange: 9
-placeableLiquid: true
-laserColor1: 7bb5d2
-laserColor2: 6393ab
-
-requirements: [
-  titanium/2
-  graphite/2
-  plastrinium/2
- metaglass/2
-]
-
-research: {
-parent: power-node
-objectives: [plastrinium]
+{
+    
+    placeableLiquid : true
+    laserColor1 : 7bb5d2
+    laserColor2 : 6393ab
+    laserRange : 9
+    category : power
+    maxNodes : 12
+    health : 85
+    type : PowerNode
+    
+    requirements : [
+        titanium/2
+        graphite/2
+        plastrinium/2
+        metaglass/2
+    ]
+    
+    research : {
+        
+        parent : power-node
+        
+        objectives : [
+            plastrinium
+        ]
+    }
 }

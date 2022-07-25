@@ -1,18 +1,26 @@
-name: confused
-healthMultiplier: 0.95
-speedMultiplier: -1
-effect: {
-type: MultiEffect
-effects: [melting, {
-type: ParticleEffect
-sizeFrom: 3
-sizeTo: 0
-lifetime: 20
-particles: 6
-cone: 360
-length: 2
-colorFrom: 60358f
-colorTo: 833cca
-}]
-}
-color: 60358f
+{
+    
+    healthMultiplier : 0.95
+    speedMultiplier : -1
+    color : 60358f
+    name : confused
+    
+    effect : {
+        
+        type : MultiEffect
+        
+        effects : [
+            melting
+            {
+                particles : 6
+                colorFrom : 60358f
+                sizeFrom : 3
+                lifetime : 20
+                colorTo : 833cca
+                sizeTo : 0
+                length : 2
+                type : ParticleEffect
+                cone : 360
+            }]
+        }
+    }

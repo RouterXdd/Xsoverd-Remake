@@ -1,64 +1,71 @@
-type: naval
-health: 200
-speed: 1.4
-hitSize: 6
-range: 60
-lightRadius: 35
-lightColor: a488eb
-weapons: [
-  {
-    name: plasmer-weapon
-    mirror: false
-    rotate: true
-    shootY: 4
-    x: 0
-    y: 0
-    reload: 50
-    shootSound: laser
-    bullet: {
-      type: LaserBulletType
-      damage: 12
-      length: 55
-      shootEffect: lancerLaserShoot
-      hitEffect: hitLaser
-      lightColor: a488eb
+{
+    
+    lightRadius : 35
+    lightColor : a488eb
+    hitSize : 6
+    health : 200
+    speed : 1.4
+    range : 60
+    type : naval
+    
+    abilities : [{
+        
+        hitBuildings : true
+        effectRadius : 4
+        healPercent : 2
+        rotateSpeed : 1
+        maxTargets : 4
+        sectorRad : 0.1
+        sectors : 2
+        damage : 6
+        reload : 2
+        color : A9D8FFFF
+        range : 40
+        type : EnergyFieldAbility
+        
+        healEffect : {
+            particles : 5
+            colorFrom : A9D8FFFF
+            lifetime : 20
+            lenFrom : 6
+            colorTo : 66B1FFFF
+            offset : 50
+            length : 55
+            lenTo : 0
+            type : ParticleEffect
+            line : true
+            cone : -360
+        }
+    }]
+    
+    research : {
+        
+        parent : plasmer
+        
+        requirements : [
+            coal/1250
+            silicon/1550
+        ]
     }
-  }
-]
-abilities: [
-        {
-    type: EnergyFieldAbility
-    healEffect: {
-    type: ParticleEffect
-    line: true
-    particles: 5
-    lifetime: 20
-    offset: 50
-    length: 55
-    cone: -360
-    lenFrom: 6
-    lenTo: 0
-    colorFrom: A9D8FFFF
-    colorTo: 66B1FFFF
-    },
-    color: A9D8FFFF
-    maxTargets: 4
-    damage: 6
-    healPercent: 2
-    range: 40
-    sectors: 2
-    rotateSpeed: 1
-    hitBuildings: true
-    sectorRad: 0.10
-    effectRadius: 4
-    reload: 2
-   }
- ]
- 
-research:{
-parent: plasmer
-requirements: [
-coal/1250
-silicon/1550
-]
+    
+    weapons : [{
+        
+        shootSound : laser
+        mirror : false
+        rotate : true
+        shootY : 4
+        reload : 50
+        name : plasmer-weapon
+        x : 0
+        y : 0
+        
+        bullet : {
+            shootEffect : lancerLaserShoot
+            lightColor : a488eb
+            hitEffect : hitLaser
+            damage : 12
+            length : 55
+            type : LaserBulletType
+        }
+    }]
 }

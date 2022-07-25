@@ -1,5 +1,7 @@
-type:OreBlock
-name:"Хролофил"
-itemDrop:xrolovil
-oreDefault:true
-variants:3
+{
+    oreDefault : true
+    itemDrop : xrolovil
+    variants : 3
+    type : OreBlock
+    name : Хролофил
+}

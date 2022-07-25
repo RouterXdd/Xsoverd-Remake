@@ -1,36 +1,42 @@
-type: Reconstructor
-name: "Xrolovil Reconstructor"
-size: 3
-health: 550
-description: "Upgrades Unitcrafts to T2"
-constructTime: 3875
-upgrades: [
-  [
-    dasher, invader
-  ]
-    [
-    spiker, scrite
-  ]
-  [
-    copyer, creater
-  ]
-  [
-    plasmer, phaser
-  ]
-]
-consumes: {
-power: 3.4
-items:{
-  items: [
-  silicon/45
-  coal/35
-  ]
+{
+    
+    constructTime : 3875
+    description : Upgrades Unitcrafts to T2
+    category : units
+    research : core-shard
+    health : 550
+    type : Reconstructor
+    name : Xrolovil Reconstructor
+    size : 3
+    
+    requirements : [
+        graphite/55
+        silicon/125
+        xrolovil/75
+    ]
+    
+    upgrades : [{
+        0 : 'dasher, invader'
+    }
+    {
+        0 : 'spiker, scrite'
+    }
+    {
+        0 : 'copyer, creater'
+    }
+    {
+        0 : 'plasmer, phaser'
+    }]
+    
+    consumes : {
+        
+        power : 3.4
+        
+        items : {
+            items : [
+                silicon/45
+                coal/35
+            ]
+        }
+    }
 }
-}
-category: units
-research: core-shard
-requirements: [
-  graphite/55
-  silicon/125
-  xrolovil/75
-]

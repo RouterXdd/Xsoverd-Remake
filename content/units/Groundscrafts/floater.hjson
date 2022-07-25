@@ -1,61 +1,68 @@
-name: Floater
-description: Floats on any liquid
-type: hover
-hovering: true
-shadowElevation: 0.12
-drag: 0.06
-speed: 2.15
-rotateSpeed: 5.1
-accel: 0.1
-range: 180
-health: 136
-armor: 3
-hitSize: 11
-engineOffset: 7
-engineSize: 2
-itemCapacity: 0
-useEngineElevation: false
-weapons: [
-    {
-        name: float-weapon
-        y: -3
-        x: 3
-        top: true
-        mirror: true
-        reload: 40
-        baseRotation: 0
-        shootCone: 360
-        shoot: {
-type: ShootSpread
-shots: 3
-firstShotDelay: 0
-spread: 11
-}
-        bullet:{
-        type: BasicBulletType
-        damage: 10
-        speed: 3
-        homingPower: 0.19
-        homingDelay: 4
-        width: 7
-        height: 12
-        lifetime: 60
-        }
+{
+    
+    useEngineElevation : false
+    shadowElevation : 0.12
+    engineOffset : 7
+    itemCapacity : 0
+    description : Floats on any liquid
+    rotateSpeed : 5.1
+    engineSize : 2
+    hovering : true
+    hitSize : 11
+    health : 136
+    speed : 2.15
+    accel : 0.1
+    range : 180
+    armor : 3
+    name : Floater
+    type : hover
+    drag : 0.06
+    
+    abilities : [{
+        teamColor : true
+        type : MoveEffectAbility
+        y : -7
+        x : 0
+    }]
+    
+    research : {
+        
+        parent : groundcraft-factory
+        
+        requirements : [
+            lead/450
+            graphite/235
+            silicon/350
+        ]
     }
-]
-abilities: [
-    {
-    type: MoveEffectAbility
-    y: -7
-    x: 0
-    teamColor: true
-}
-]
-research:{
-parent: groundcraft-factory
-requirements: [
-lead/450
-graphite/235
-silicon/350
-]
+    
+    weapons : [{
+        
+        baseRotation : 0
+        shootCone : 360
+        mirror : true
+        reload : 40
+        name : float-weapon
+        top : true
+        y : -3
+        x : 3
+        
+        bullet : {
+            homingPower : 0.19
+            homingDelay : 4
+            lifetime : 60
+            damage : 10
+            height : 12
+            speed : 3
+            width : 7
+            type : BasicBulletType
+        }
+        
+        shoot : {
+            firstShotDelay : 0
+            spread : 11
+            shots : 3
+            type : ShootSpread
+        }
+    }]
 }

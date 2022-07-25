@@ -1,13 +1,17 @@
-name: "plastrinium-complex"
-planet: serpulo
-sector: 182
-difficulty: 8
-research: {
-parent: tarFields
-objectives: [
-    {
-      type: SectorComplete
-      preset: tarFields
+{
+    
+    difficulty : 8
+    planet : serpulo
+    sector : 182
+    name : plastrinium-complex
+    
+    research : {
+        
+        parent : tarFields
+        
+        objectives : [{
+            preset : tarFields
+            type : SectorComplete
+        }]
     }
-  ]
-} 
+}

@@ -1,14 +1,18 @@
-name: "laboratory"
-captureWave: 20
-planet: serpulo
-sector: 12
-difficulty: 6
-research: {
-parent: nuclearComplex
-objectives: [
-    {
-      type: SectorComplete
-      preset: nuclearComplex
+{
+    
+    captureWave : 20
+    difficulty : 6
+    planet : serpulo
+    sector : 12
+    name : laboratory
+    
+    research : {
+        
+        parent : nuclearComplex
+        
+        objectives : [{
+            preset : nuclearComplex
+            type : SectorComplete
+        }]
     }
-  ]
 }

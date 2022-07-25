@@ -1,4 +1,6 @@
-name: Durka Floor
-description: You going to durka, wisoid
-type: floor
-variants: 1
+{
+    description : 'You going to durka, wisoid'
+    variants : 1
+    name : Durka Floor
+    type : floor
+}

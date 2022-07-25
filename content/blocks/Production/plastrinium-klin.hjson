@@ -1,46 +1,55 @@
-    name: Plastrinium klin
-    description: "[lime]Make the plastrinium"
-    type: GenericCrafter
-	size: 2
-	hasPower: true
-	hasItems: true
-	itemCapacity: 10
-	craftEffect: {
-    type: WaveEffect
-    strokeFrom: 1
-    strokeTo: 1
-    lifetime: 30
-    sizeFrom: 12
-    sizeTo: 0
-    colorTo: FFFFFFFF
-    colorFrom: DBFFBDFF
-    }
-	craftTime: 65
-	updateEffect: none
-	consumes: {
-		power: 6.3
-		items: {
-			items: [
-               plastanium/1
-			   silicon/2
-			   titanium/4
-			]
-		}
-	}
-	requirements: [
+{
+    
+    itemCapacity : 10
+    updateEffect : none
+    description : '[lime]Make the plastrinium'
+    outputItem : plastrinium/1
+    craftTime : 65
+    hasPower : true
+    hasItems : true
+    category : crafting
+    name : Plastrinium klin
+    type : GenericCrafter
+    size : 2
+    
+    requirements : [
         copper/125
         lead/165
-		silicon/125
+        silicon/125
         plastanium/75
-	]
-	category: crafting
-	research: {
-parent: plastanium-compressor
-objectives: [
-    {
-      type: SectorComplete
-      preset: plastrinium-complex
+    ]
+    
+    craftEffect : {
+        strokeFrom : 1
+        colorFrom : DBFFBDFF
+        strokeTo : 1
+        lifetime : 30
+        sizeFrom : 12
+        colorTo : FFFFFFFF
+        sizeTo : 0
+        type : WaveEffect
     }
-  ]
-}  
-	outputItem: plastrinium/1
+    
+    consumes : {
+        
+        power : 6.3
+        
+        items : {
+            items : [
+                plastanium/1
+                silicon/2
+                titanium/4
+            ]
+        }
+    }
+    
+    research : {
+        
+        parent : plastanium-compressor
+        
+        objectives : [{
+            preset : plastrinium-complex
+            type : SectorComplete
+        }]
+    }
+}

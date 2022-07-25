@@ -1,32 +1,40 @@
-type: PowerTurret
-name: "Xrolovil Arc"
-description: "Arc upgraded with xrolovil"
-targetAir: true
-targetGround: true
-health: 550
-size: 2
-reload: 6
-inaccuracy: 30
-consumes:{
-power: 3.2
-  coolant: {
-    amount: 0.2
-  }
+{
+    
+    targetGround : true
+    description : Arc upgraded with xrolovil
+    inaccuracy : 30
+    shootSound : spark
+    targetAir : true
+    category : turret
+    research : arc
+    health : 550
+    reload : 6
+    range : 125
+    type : PowerTurret
+    name : Xrolovil Arc
+    size : 2
+    
+    requirements : [
+        xrolovil/75
+        lead/95
+        copper/145
+    ]
+    
+    shootType : {
+        lightningLengthRand : 12
+        lightningColor : '#004500'
+        lifetime : 5
+        damage : 20
+        speed : 0
+        type : LightningBulletType
+    }
+    
+    consumes : {
+        
+        power : 3.2
+        
+        coolant : {
+            amount : 0.2
+        }
+    }
 }
-range: 125
-shootType:{
-type: LightningBulletType
-lightningColor: "#004500"
-lightningLengthRand: 12
-speed: 0
-lifetime: 5
-damage: 20
-}
-shootSound: spark
-category: turret
-research: arc
-requirements: [
-xrolovil/75
-lead/95
-copper/145
-]

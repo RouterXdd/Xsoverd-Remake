@@ -1,59 +1,67 @@
-name:Dasher
-type: flying
-flying: true
-health: 115
-speed: 3.4
-rotateSpeed: 20
-circleTarget: true
-lightRadius: 22
-lightColor: e65555
-weapons: [
-  {
-    name: dasher-weapon
-    x: 0
-    y: 0
-    mirror: false
-    shootSound: none
-    reload: 20
-    bullet: {
-      type: RailBulletType
-      damage: 20
-      length: 80
-      recoil: -40
-      shootEffect: none
-      smokeEffect: none
+{
+    
+    circleTarget : true
+    rotateSpeed : 20
+    lightRadius : 22
+    lightColor : e65555
+    flying : true
+    health : 115
+    speed : 3.4
+    name : Dasher
+    type : flying
+    
+    abilities : [{
+        
+        shootSound : none
+        minSpeed : 0
+        maxSpeed : 0
+        damage : 0
+        chance : 1
+        length : 1
+        color : 00000000
+        type : MoveLightningAbility
+        
+        shootEffect : {
+            particles : 1
+            colorFrom : fffffff25
+            sizeFrom : 5
+            lifetime : 15
+            colorTo : ffffff00
+            sizeTo : 0
+            length : 0.01
+            region : xsoverdr-dasher-effect
+            layer : 99
+            type : ParticleEffect
+        }
+    }]
+    
+    research : {
+        
+        parent : aircraft-factory
+        
+        requirements : [
+            copper/1000
+            lead/750
+            silicon/1750
+        ]
     }
-  }
-]
-abilities: [
-  {
-    type: MoveLightningAbility
-    minSpeed: 0
-    maxSpeed: 0
-    damage: 0
-    chance: 1
-    length: 1
-    color: 00000000
-    shootSound: none
-    shootEffect: {
-      type: ParticleEffect
-      layer: 99
-      particles: 1
-      sizeFrom: 5
-      sizeTo: 0
-      length: 0.01
-      lifetime: 15
-      region: xsoverdr-dasher-effect
-      colorFrom: fffffff25
-      colorTo: ffffff00
-    }
-  }
-]
-research:{
-parent: aircraft-factory
-requirements: [
-copper/1000
-lead/750
-silicon/1750
-]
+    
+    weapons : [{
+        
+        shootSound : none
+        mirror : false
+        reload : 20
+        name : dasher-weapon
+        x : 0
+        y : 0
+        
+        bullet : {
+            shootEffect : none
+            smokeEffect : none
+            damage : 20
+            length : 80
+            recoil : -40
+            type : RailBulletType
+        }
+    }]
 }

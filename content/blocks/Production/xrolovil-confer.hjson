@@ -1,38 +1,44 @@
-{	
-    "name": "Xrolovil Sintesator",
-    "description": "[green]Transform scrap to xrolovil",
-    "type": "GenericCrafter",
-	"size": 2,
-	"hasPower": true,
-	"hasItems": true,
-	"itemCapacity": 10,
-	"craftEffect": {
-    "type": "WaveEffect",
-    "strokeFrom": 1,
-    "strokeTo": 0,
-    "lifetime": 28,
-    "sizeFrom": 0,
-    "sizeTo": 12,
-    "colorTo": "FFFFFFFF",
-    "colorFrom": "DBFFBDFF"
-    },
-	"craftTime": 65,
-	"updateEffect": "none",
-	"consumes": {
-		"power": 4.6,
-		"items": {
-			"items": [
-               "scrap/1",
-			]
-		}
-	},
-	"requirements": [
-        "copper/125",
-        "lead/85",
-		"silicon/75",
-        "xrolovil/45"
-	],
-	"category": "crafting",
-	"research": "xroviler",
-	"outputItem": "xrolovil/1"
+{
+    
+    itemCapacity : 10
+    updateEffect : none
+    description : '[green]Transform scrap to xrolovil'
+    outputItem : xrolovil/1
+    craftTime : 65
+    hasPower : 'true,'
+    hasItems : 'true,'
+    category : crafting
+    research : xroviler
+    name : Xrolovil Sintesator
+    type : GenericCrafter
+    size : 2
+    
+    requirements : [
+        copper/125
+        lead/85
+        silicon/75
+        xrolovil/45
+    ]
+    
+    craftEffect : {
+        strokeFrom : 1
+        colorFrom : DBFFBDFF
+        strokeTo : 0
+        lifetime : 28
+        sizeFrom : 0
+        colorTo : FFFFFFFF
+        sizeTo : 12
+        type : WaveEffect
+    }
+    
+    consumes : {
+        
+        power : 4.6
+        
+        items : {
+            items : [
+                scrap/1
+            ]
+        }
+    }
 }

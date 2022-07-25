@@ -1,14 +1,20 @@
-name: "Xrotine"
-description: "Xrolovil combinated with titanium"
-color: "#00b765"
-cost: 1.5
-radioactivity: 0.2
-explosiveness:0.0
-flammability:0.0
-hardness: 3
-research: {
-parent: xrolovil
-requirements: [
-xrotine/1
-]
+{
+    
+    radioactivity : 0.2
+    explosiveness : 0
+    flammability : 0
+    description : Xrolovil combinated with titanium
+    hardness : 3
+    color : '#00b765'
+    name : Xrotine
+    cost : 1.5
+    
+    research : {
+        
+        parent : xrolovil
+        
+        requirements : [
+            xrotine/1
+        ]
+    }
 }
