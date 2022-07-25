@@ -16,9 +16,10 @@
         metaglass/165
     ]
     
-    upgrades : [{
-        0 : 'scrite, strafer'
-    }]
+    upgrades : [[
+        scrite, strafer
+    ]
+    ]
     
     consumes : {
         

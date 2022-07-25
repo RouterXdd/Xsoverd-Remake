@@ -15,18 +15,18 @@
         xrolovil/75
     ]
     
-    upgrades : [{
-        0 : 'dasher, invader'
-    }
-    {
-        0 : 'spiker, scrite'
-    }
-    {
-        0 : 'copyer, creater'
-    }
-    {
-        0 : 'plasmer, phaser'
-    }]
+    upgrades : [[
+        dasher, invader
+    ]
+    [
+        spiker, scrite
+    ]
+    [
+        copyer, creater
+    ]
+    [
+        plasmer, phaser
+    ]]
     
     consumes : {
         
