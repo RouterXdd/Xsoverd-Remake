@@ -1,13 +1,19 @@
-name: "Xrolovil"
-description: "Crystal from underground of Serpulo. Have low radiactivity level"
-color: "#007500"
-radioactivity: 0.2
-explosiveness:0.0
-flammability:0.0
-hardness: 2
-research: {
-parent: thorium
-requirements: [
-xrolovil/1
-]
+{
+    
+    radioactivity : 0.2
+    explosiveness : 0
+    flammability : 0
+    description : Crystal from underground of Serpulo. Have low radiactivity level
+    hardness : 2
+    color : '#007500'
+    name : Xrolovil
+    
+    research : {
+        
+        parent : thorium
+        
+        requirements : [
+            xrolovil/1
+        ]
+    }
 }

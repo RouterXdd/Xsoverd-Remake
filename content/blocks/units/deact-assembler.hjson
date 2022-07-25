@@ -1,37 +1,43 @@
-name: Heal Deactivator Assembler
-description: Make the Heal Deactivator
-type: UnitAssembler
-size: 4
-health: 365
-consumes: {
-    power: 2.6
-    liquid: {
-        liquid: cryofluid
-        amount: 0.4
+{
+    
+    description : Make the Heal Deactivator
+    areaSize : 6
+    category : units
+    research : core-shard
+    health : 365
+    name : Heal Deactivator Assembler
+    type : UnitAssembler
+    size : 4
+    
+    requirements : [
+        silicon/355
+        lead/295
+        graphite/190
+        titanium/165
+    ]
+    
+    consumes : {
+        
+        power : 2.6
+        
+        liquid : {
+            liquid : cryofluid
+            amount : 0.4
+        }
     }
+    
+    plans : [{
+        
+        unit : heal-deactivator
+        time : 3300
+        
+        requirements : [{
+            PayloadStack : dagger
+            amount : 4
+        }
+        {
+            amount : 12
+            block : titanium-wall-large
+        }]
+    }]
 }
-areaSize: 6
-plans: [
-    {
-        unit: heal-deactivator
-        requirements: [
-            {
-         PayloadStack: dagger
-         amount: 4
-         }
-         {
-         block: titanium-wall-large
-         amount: 12
-         }
-        ]
-        time: 3300
-    }
-]
-category: units
-requirements: [
-  silicon/355
-  lead/295
-  graphite/190
-  titanium/165
-]
-research: core-shard

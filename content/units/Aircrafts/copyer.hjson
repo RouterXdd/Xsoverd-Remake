@@ -1,47 +1,53 @@
-name:Copyer
-type: payload
-flying: true
-health: 85
-speed: 2.85
-rotateSpeed: 18
-range: 75
-circleTarget: true
-lightRadius: 40
-lightColor: e65555
-weapons: [
- {
-    name: copyer-weapon
-    x: 0
-    y: 4.5
-    mirror: false
-    shootSound: none
-    reload: 14
-    bullet: {
-      type: BasicBulletType
-      damage: 6
-      speed: 4
-      lifetime: 20
-      pierceDamageFactor: 0
-      length: 2
-      recoil: 2
-      shootEffect: none
-      smokeEffect: none
+{
+    
+    circleTarget : true
+    rotateSpeed : 18
+    lightRadius : 40
+    lightColor : e65555
+    flying : true
+    health : 85
+    speed : 2.85
+    range : 75
+    name : Copyer
+    type : payload
+    
+    abilities : [{
+        spawnTime : 475
+        spawnX : 0
+        spawnY : 0
+        type : UnitSpawnAbility
+        unit : copyer
+    }]
+    
+    research : {
+        
+        parent : aircraft-factory
+        
+        requirements : [
+            lead/1750
+            silicon/1550
+        ]
     }
-  }
-]
-abilities: [
-  {
-    type: UnitSpawnAbility
-    unit: copyer
-    spawnX: 0
-    spawnY: 0
-    spawnTime: 475
-  }
-]
-research:{
-parent: aircraft-factory
-requirements: [
-lead/1750
-silicon/1550
-]
+    
+    weapons : [{
+        
+        shootSound : none
+        mirror : false
+        reload : 14
+        name : copyer-weapon
+        x : 0
+        y : 4.5
+        
+        bullet : {
+            pierceDamageFactor : 0
+            shootEffect : none
+            smokeEffect : none
+            lifetime : 20
+            damage : 6
+            length : 2
+            recoil : 2
+            speed : 4
+            type : BasicBulletType
+        }
+    }]
 }

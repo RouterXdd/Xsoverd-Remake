@@ -1,29 +1,35 @@
-type: Reconstructor
-name: "Plastrinium Reconstructor"
-size: 5
-health: 3750
-description: "Upgrades Unitcrafts to T3"
-constructTime: 7368
-upgrades: [
-  [
-    scrite, strafer
-  ]
-]
-consumes: {
-power: 5.8
-items:{
-  items: [
-  silicon/85
-  plastrinium/65
-  metaglass/25
-  ]
+{
+    
+    constructTime : 7368
+    description : Upgrades Unitcrafts to T3
+    category : units
+    research : xrolovil-reconstructor
+    health : 3750
+    type : Reconstructor
+    name : Plastrinium Reconstructor
+    size : 5
+    
+    requirements : [
+        lead/275
+        silicon/625
+        plastrinium/275
+        metaglass/165
+    ]
+    
+    upgrades : [{
+        0 : 'scrite, strafer'
+    }]
+    
+    consumes : {
+        
+        power : 5.8
+        
+        items : {
+            items : [
+                silicon/85
+                plastrinium/65
+                metaglass/25
+            ]
+        }
+    }
 }
-}
-category: units
-research: xrolovil-reconstructor
-requirements: [
-  lead/275
-  silicon/625
-  plastrinium/275
-  metaglass/165
-]

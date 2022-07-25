@@ -1,106 +1,118 @@
-name:Scrite
-type: flying
-flying: true
-health: 385
-speed: 2.25
-rotateSpeed: 16
-hitSize: 7
-range: 135
-circleTarget: true
-engineSize: 3
-lightRadius: 45
-lightColor: e65555
-weapons: [
- {
-    name: scrite-weaponmain
-    x: 0
-    y: 6
-    mirror: false
-    shootSound: none
-    reload: 50
-    bullet: {
-      type: EmpBulletType
-  damage: 20
-  radius: 12
-  unitDamageScl: 0.6
-  timeIncrease: 1
-  timeDuration: 120
-  speed: 5
-  lifetime: 27
-  sprite: circle-bullet
-  recoil: 1
-  width: 10
-  height: 10
-  shrinkY: 0
-  frontColor: ffffff
-  backColor: D71526
-  lightColor: D71526
-  hitColor: D71526
-hitEffect: {
-        type: WaveEffect
-        lifetime: 30
-        sizeFrom: 12
-        sizeTo: 16
-        strokeFrom: 2
-        strokeTo: 0
-        colorFrom: D71526
-        colorTo: D71526
-      }
-  trailWidth: 3
-  trailLength: 15
-  trailColor: D71526
-  despawnEffect: none
-  despawnHit: true
-    }
-}
 {
-    name: scrite-weapon
-    x: 4
-    y: -1
-    mirror: true
-    shootSound: none
-    reload: 10
-    bullet: {
-      type: EmpBulletType
-  damage: 8
-  radius: 10
-  unitDamageScl: 0.6
-  timeIncrease: 1
-  timeDuration: 120
-  speed: 5
-  lifetime: 27
-  sprite: circle-bullet
-  recoil: 1
-  width: 8
-  height: 8
-  shrinkY: 0
-  frontColor: ffffff
-  backColor: D71526
-  lightColor: D71526
-  hitColor: D71526
-hitEffect: {
-        type: WaveEffect
-        lifetime: 10
-        sizeFrom: 8
-        sizeTo: 10
-        strokeFrom: 2
-        strokeTo: 0
-        colorFrom: D71526
-        colorTo: D71526
-      }
-  trailWidth: 2
-  trailLength: 12
-  trailColor: D71526
-  despawnEffect: none
-  despawnHit: true
+    
+    circleTarget : true
+    rotateSpeed : 16
+    lightRadius : 45
+    engineSize : 3
+    lightColor : e65555
+    hitSize : 7
+    flying : true
+    health : 385
+    speed : 2.25
+    range : 135
+    name : Scrite
+    type : flying
+    
+    research : {
+        
+        parent : spiker
+        
+        requirements : [
+            coal/1250
+            silicon/1550
+        ]
     }
-}
-  ]
-
-research:{
-parent: spiker
-requirements: [
-coal/1250
-silicon/1550
-]
+    
+    weapons : [{
+        
+        shootSound : none
+        mirror : false
+        reload : 50
+        name : scrite-weaponmain
+        x : 0
+        y : 6
+        
+        bullet : {
+            
+            unitDamageScl : 0.6
+            despawnEffect : none
+            timeIncrease : 1
+            timeDuration : 120
+            trailLength : 15
+            frontColor : ffffff
+            lightColor : D71526
+            trailWidth : 3
+            trailColor : D71526
+            despawnHit : true
+            backColor : D71526
+            lifetime : 27
+            hitColor : D71526
+            shrinkY : 0
+            damage : 20
+            radius : 12
+            sprite : circle-bullet
+            recoil : 1
+            height : 10
+            speed : 5
+            width : 10
+            type : EmpBulletType
+            
+            hitEffect : {
+                strokeFrom : 2
+                colorFrom : D71526
+                lifetime : 30
+                sizeFrom : 12
+                strokeTo : 0
+                colorTo : D71526
+                sizeTo : 16
+                type : WaveEffect
+            }
+        }
+    }
+    {
+        
+        shootSound : none
+        mirror : true
+        reload : 10
+        name : scrite-weapon
+        x : 4
+        y : -1
+        
+        bullet : {
+            
+            unitDamageScl : 0.6
+            despawnEffect : none
+            timeIncrease : 1
+            timeDuration : 120
+            trailLength : 12
+            frontColor : ffffff
+            lightColor : D71526
+            trailWidth : 2
+            trailColor : D71526
+            despawnHit : true
+            backColor : D71526
+            lifetime : 27
+            hitColor : D71526
+            shrinkY : 0
+            damage : 8
+            radius : 10
+            sprite : circle-bullet
+            recoil : 1
+            height : 8
+            speed : 5
+            width : 8
+            type : EmpBulletType
+            
+            hitEffect : {
+                strokeFrom : 2
+                colorFrom : D71526
+                lifetime : 10
+                sizeFrom : 8
+                strokeTo : 0
+                colorTo : D71526
+                sizeTo : 10
+                type : WaveEffect
+            }
+        }
+    }]
 }

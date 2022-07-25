@@ -1,55 +1,61 @@
-name:Creater
-type: payload
-flying: true
-health: 225
-speed: 2.55
-rotateSpeed: 18
-hitSize: 6
-range: 85
-circleTarget: true
-lightRadius: 40
-lightColor: e65555
-weapons: [
- {
-    name: creater-weapon
-    x: 0
-    y: -4
-    mirror: false
-    shootSound: none
-    reload: 14
-    bullet: {
-      type: BasicBulletType
-      damage: 10
-      speed: 4
-      lifetime: 20
-      pierceDamageFactor: 0.1
-      length: 2
-      recoil: 2
-      shootEffect: none
-      smokeEffect: none
+{
+    
+    circleTarget : true
+    rotateSpeed : 18
+    lightRadius : 40
+    lightColor : e65555
+    hitSize : 6
+    flying : true
+    health : 225
+    speed : 2.55
+    range : 85
+    name : Creater
+    type : payload
+    
+    abilities : [{
+        spawnTime : 375
+        spawnX : 5
+        spawnY : 0
+        type : UnitSpawnAbility
+        unit : copyer
     }
-  }
-]
-abilities: [
-  {
-    type: UnitSpawnAbility
-    unit: copyer
-    spawnX: 5
-    spawnY: 0
-    spawnTime: 375
-  }
-  {
-    type: UnitSpawnAbility
-    unit: copyer
-    spawnX: -5
-    spawnY: 0
-    spawnTime: 375
-  }
-]
-research:{
-parent: copyer
-requirements: [
-coal/1250
-silicon/1550
-]
+    {
+        spawnTime : 375
+        spawnX : -5
+        spawnY : 0
+        type : UnitSpawnAbility
+        unit : copyer
+    }]
+    
+    research : {
+        
+        parent : copyer
+        
+        requirements : [
+            coal/1250
+            silicon/1550
+        ]
+    }
+    
+    weapons : [{
+        
+        shootSound : none
+        mirror : false
+        reload : 14
+        name : creater-weapon
+        x : 0
+        y : -4
+        
+        bullet : {
+            pierceDamageFactor : 0.1
+            shootEffect : none
+            smokeEffect : none
+            lifetime : 20
+            damage : 10
+            length : 2
+            recoil : 2
+            speed : 4
+            type : BasicBulletType
+        }
+    }]
 }

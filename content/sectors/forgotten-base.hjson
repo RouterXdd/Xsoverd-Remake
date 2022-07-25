@@ -1,14 +1,18 @@
-name: "forgotten-base"
-captureWave: 40
-planet: serpulo
-sector: 78
-difficulty: 7
-research: {
-parent: ruinousShores
-objectives: [
-    {
-      type: SectorComplete
-      preset: ruinousShores
+{
+    
+    captureWave : 40
+    difficulty : 7
+    planet : serpulo
+    sector : 78
+    name : forgotten-base
+    
+    research : {
+        
+        parent : ruinousShores
+        
+        objectives : [{
+            preset : ruinousShores
+            type : SectorComplete
+        }]
     }
-  ]
 }

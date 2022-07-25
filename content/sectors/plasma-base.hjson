@@ -1,13 +1,17 @@
-name: "plasma-base"
-planet: serpulo
-sector: 95
-difficulty: 7
-research: {
-parent: laboratory
-objectives: [
-    {
-      type: SectorComplete
-      preset: laboratory
+{
+    
+    difficulty : 7
+    planet : serpulo
+    sector : 95
+    name : plasma-base
+    
+    research : {
+        
+        parent : laboratory
+        
+        objectives : [{
+            preset : laboratory
+            type : SectorComplete
+        }]
     }
-  ]
-} 
+}

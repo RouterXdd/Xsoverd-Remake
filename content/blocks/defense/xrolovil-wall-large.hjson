@@ -1,10 +1,14 @@
-name:"Big Xrolovil Wall"
-description:"Have more hp"
-type:Wall
-health:1800
-size:2
-requirements:[
-xrolovil/24
-]
-category:defense
-research:xrolovil-wall
+{
+    
+    description : Have more hp
+    category : defense
+    research : xrolovil-wall
+    health : 1800
+    name : Big Xrolovil Wall
+    type : Wall
+    size : 2
+    
+    requirements : [
+        xrolovil/24
+    ]
+}

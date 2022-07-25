@@ -1,20 +1,27 @@
-name: plasmatic destruction
-damage: 5
-healthMultiplier: 1
-speedMultiplier: 1
-effect: {
-type: MultiEffect
-effects: [melting
-, {
-type: ParticleEffect
-sizeFrom: 2
-sizeTo: 0
-lifetime: 20
-particles: 4
-cone: 360
-length: 2
-colorFrom: bfff7f
-colorTo: 8cbc5d
-}]
-}
-color: bfff7f
+{
+    
+    healthMultiplier : 1
+    speedMultiplier : 1
+    damage : 5
+    color : bfff7f
+    name : plasmatic destruction
+    
+    effect : {
+        
+        type : MultiEffect
+        
+        effects : [
+            melting
+            {
+                particles : 4
+                colorFrom : bfff7f
+                sizeFrom : 2
+                lifetime : 20
+                colorTo : 8cbc5d
+                sizeTo : 0
+                length : 2
+                type : ParticleEffect
+                cone : 360
+            }]
+        }
+    }

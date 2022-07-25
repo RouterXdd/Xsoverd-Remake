@@ -1,38 +1,43 @@
-name: "Ground craft factory"
-description: "Make the three types of ground crafts"
-type: UnitFactory
-health: 450
-size: 3
-consumes: {
-power: 2.8
+{
+    
+    description : Make the three types of ground crafts
+    category : units
+    research : core-shard
+    health : 450
+    name : Ground craft factory
+    type : UnitFactory
+    size : 3
+    
+    requirements : [
+        silicon/175
+        lead/95
+        copper/145
+    ]
+    
+    consumes : {
+        power : 2.8
+    }
+    
+    plans : [{
+        
+        unit : sworder
+        time : 2450
+        
+        requirements : [
+            titanium/10
+            lead/8
+            silicon/10
+        ]
+    }
+    {
+        
+        unit : floater
+        time : 2700
+        
+        requirements : [
+            lead/12
+            graphite/5
+            silicon/8
+        ]
+    }]
 }
-plans: [
-  {
-    unit: sworder
-    requirements: [
-      titanium/10
-      lead/8
-      silicon/10
-    ]
-    time:  2450
-  }
-  {
-    unit: floater
-    requirements: [
-      lead/12
-      graphite/5
-      silicon/8
-    ]
-    time:  2700
-  }
-]
-category: units
-requirements: [
-  silicon/175
-  lead/95
-  copper/145
-]
-research: core-shard
-
-
-

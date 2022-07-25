@@ -1,73 +1,95 @@
-type: PowerTurret
-size: 2
-category: turret
-research: lancer
-requirements: [
-lead/200
-graphite/125
-silicon/90
-plastanium/125
-]
-range: 180
-health: 620
-recoilAmount: 2
-reload: 90
-consumes:{
-power: 8
-  coolant: {
-    amount: 0.2
-  }
+{
+    
+    recoilAmount : 2
+    targetGround : true
+    smokeEffect : none
+    shootShake : 3
+    shootSound : pew
+    heatColor : 00b20d
+    targetAir : true
+    shootCone : 90
+    category : turret
+    research : lancer
+    health : 620
+    reload : 90
+    range : 180
+    type : PowerTurret
+    size : 2
+    
+    requirements : [
+        lead/200
+        graphite/125
+        silicon/90
+        plastanium/125
+    ]
+    
+    shootType : {
+        
+        despawnEffect : none
+        bulletHeight : 24
+        bulletWidth : 18
+        shootEffect : shockwave
+        fragBullets : 5
+        frontColor : '00b20d,'
+        backColor : '00b91d,'
+        lifetime : 30
+        fragCone : 180
+        hitSound : laser
+        damage : 65
+        speed : 6
+        type : BasicBulletType
+        
+        fragBullet : {
+            
+            despawnEffect : none
+            length : 180
+            damage : 30
+            type : LaserBulletType
+            
+            hitEffect : {
+                particles : 6
+                colorFrom : 00b20d
+                lifetime : 20
+                sizeFrom : 0
+                colorTo : 00b20d
+                length : 10
+                sizeTo : 4
+                type : ParticleEffect
+                line : true
+            }
+            
+            colors : [
+                00b20d
+                00b20d
+                FFFFFF
+            ]
+        }
+        
+        hitEffect : {
+            particles : 12
+            colorFrom : 00b20d
+            lifetime : 20
+            sizeFrom : 0
+            colorTo : 00b20d
+            length : 10
+            sizeTo : 8
+            type : ParticleEffect
+            line : true
+        }
+        
+        colors : [
+            00b20d
+            00b20d
+            FFFFFF
+        ]
+    }
+    
+    consumes : {
+        
+        power : 8
+        
+        coolant : {
+            amount : 0.2
+        }
+    }
 }
-shootShake: 3
-smokeEffect: none
-heatColor: 00b20d
-targetGround: true
-targetAir: true
-shootSound: pew
-shootType: {
-type: BasicBulletType
-frontColor: 00b20d,
-backColor: 00b91d,
-speed: 6
-lifetime: 30
-bulletWidth: 18
-bulletHeight: 24
-colors: ["00b20d", "00b20d", "FFFFFF"]
-
-hitEffect: {
-type: ParticleEffect
-particles: 12
-length: 10
-lifetime: 20
-line: true
-sizeFrom: 0
-sizeTo: 8
-colorFrom: 00b20d
-colorTo: 00b20d
-}
-despawnEffect: none
-damage: 65
-shootEffect: shockwave
-fragBullets: 5
-fragCone: 180
-hitSound: laser
-fragBullet: {
-type: LaserBulletType
-length: 180
-colors: ["00b20d", "00b20d", "FFFFFF"]
-hitEffect: {
-type: ParticleEffect
-particles: 6
-length: 10
-lifetime: 20
-line: true
-sizeFrom: 0
-sizeTo: 4
-colorFrom: 00b20d
-colorTo: 00b20d
-}
-despawnEffect: none
-damage: 30
-}
-}
-shootCone: 90

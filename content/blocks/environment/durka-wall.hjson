@@ -1,4 +1,6 @@
-name: Durka wall
-description: Bedu s bawkoy
-type: staticWall
-variants: 1
+{
+    description : Bedu s bawkoy
+    variants : 1
+    name : Durka wall
+    type : staticWall
+}
