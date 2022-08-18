@@ -29,30 +29,6 @@ type: BasicBulletType
             trailColor: cbd97f
             despawnEffect: none
             despawnHit: true
-            pointEffectSpace: 30
-            pointEffect: {
-                type: MultiEffect
-                effects: [
-                  {
-                    lightOpacity: 0.25
-                    lightScl: 1
-                    type: ParticleEffect
-                    length: 0
-                    baseLength: 40
-                    randLength: false
-                    lifetime: 60
-                    particles: 1
-                    cone: 0
-                    interp: pow3In
-                    sizeInterp: linear
-                    region: xsoverdr-railblast
-                    sizeFrom: 10
-                    sizeTo: 3
-                    colorFrom: 9cb664
-                    colorTo: 9cb66400
-                  }
-                ]
-            }
 }
 category: turret
 research: lancer
