@@ -4,7 +4,6 @@
     planet : serpulo
     sector : 95
     name : plasma-base
-    generator : 0
     research : {
         
         parent : laboratory
