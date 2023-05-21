@@ -63,7 +63,55 @@
             "despawnEffect": "none",
             "damage": 45
         }
+    },
+    "plastrinium": {
+        "type": "RailBulletType",
+        "damage": 800,
+        "length": 380,
+        "ammoMultiplier": 1.5,
+        "pierce": true,
+        "colors": ["00b20d", "00b20d", "FFFFFF"],
+        "collidesTiles": true,
+        "pierceEffect": "railHit",
+        "updateEffect": "railTrail",
+        "hitEffect": "massiveExplosion",
+        "smokeEffect": "shootBig2",
+        "pierceDamageFactor": 0.6,
+        "fragBullets": 24,
+        "fragCone": 360,
+        "hitSound": "laser",
+        "pointEffectSpace": 42,
+        "pointEffect": {
+            "type": "MultiEffect",
+            "effects": [
+              {
+                "lightOpacity": 0.25,
+                "lightScl": 1,
+                "type": "ParticleEffect",
+                "length": 0,
+                "baseLength": 30,
+                "randLength": false,
+                "lifetime": 110,
+                "particles": 1,
+                "cone": 0,
+                "interp": "pow3In",
+                "sizeInterp": "linear",
+                "region": "xsoverdr-railblast",
+                "sizeFrom": 14,
+                "sizeTo": 7,
+                "colorFrom": "0d8200",
+                "colorTo": "0d820000"
+              }
+            ]
+        },
+        "fragBullet": {
+        "type": "LaserBulletType",
+        "colors": ["00b20d", "00b20d", "FFFFFF"],
+        "length": 200,
+        "despawnEffect": "none",
+        "damage": 60
     }
+}
     },
     "consumes": {
         "power": 4.9,

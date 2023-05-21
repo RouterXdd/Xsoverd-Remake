@@ -1,0 +1,52 @@
+{
+    
+    itemCapacity : 10
+    updateEffect : none
+    description : 'Shoot in the sun to obtain the fragment form him'
+    outputItem : light-crystal/1
+    craftTime : 1
+    hasPower : true
+    hasItems : true
+    category : crafting
+    name : Sun stricker
+    type : GenericCrafter
+    size : 2
+    
+    requirements : [
+        copper/200
+        lead/180
+        thorium/80
+        silicon/160
+        plastrinium/70
+    ]
+    
+    craftEffect : {
+        strokeFrom : 1
+        colorFrom : b5bb00FF
+        strokeTo : 0
+        lifetime : 18
+        sizeFrom : 8
+        colorTo : FFFFFFFF
+        sizeTo : 0
+        type : WaveEffect
+    }
+    
+    consumes : {
+        
+        power : 8
+        
+        items : {
+            items : [
+                surge-alloy/1
+                plastrinium/1
+            ]
+        }
+    }
+    
+    research : {
+        
+        parent : plastrinium-klin
+        
+        objectives : [surge-smelter]
+    }
+}
